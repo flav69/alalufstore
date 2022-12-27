@@ -129,6 +129,72 @@ header{
     font-size: 1.8rem;
     font-weight: 100;
 }
+
+/* BODY */
+
+    /* carrusel */
+
+.carrusel{
+    width: 100%;
+    margin-top: ;
+}
+.carrusel__contenedor{
+    width: 100%;
+    position: relative;
+}
+.carrusel__anterior,.carrusel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    color: black;
+    z-index: 1;
+
+ 
+}
+.carrusel__anterior{
+    left: 5px;
+}
+
+.carrusel__siguiente{
+    right: 5px;
+}
+.carrusel__item img{
+    height: 100%;
+    width: 100%;
+
+}
+.carrusel__lista{
+    overflow: hidden;
+}
+.carrusel__item{
+    text-align: center;
+    max-height: 400px;
+
+}
+.carrusel__item p{
+    color: black;
+
+}
+
+.carrusel__anterior:hover,.carrusel__siguiente:hover{
+background-color: gray;
+}
+
+.carrusel__indicadores .glider-dot{
+    width: 38px;
+    height: 4px;
+}
+.carrusel__indicadores .glider-dot.active{
+    background-color: black;
+
 .middle-box{
     display: block;
     height: 100rem;
