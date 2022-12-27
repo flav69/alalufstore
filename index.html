@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alaluf Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="./assets/css/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+
+    <!-- HEADER -->
+
     <header>
         <div class="header-top">
             <marquee behavior="scroll" direction="left" scrollamount="6" class="header-top-sign" >
@@ -31,11 +36,59 @@
             </div>
         </div>
     </header>
+
+    <!-- MAIN -->
     <main>
 
-    </main>
+        <!-- Carrusel -->
+        <div class="carrusel">
+
+            <div class="carrusel__contenedor">
+
+                <button aria-label="Anterior" class="carrusel__anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="carrusel__lista">
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>Ropa de Viajes</p>
+                    </div>
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p> Camisas</p>
+                    </div>
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>Ropa Elegante</p>
+                    </div>
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/4794849/pexels-photo-4794849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>De entrecasa</p>
+                    </div>
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/5705514/pexels-photo-5705514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>Para el colegio</p>
+                    </div>
+                    <div class="carrusel__item">
+                        <img src="https://images.pexels.com/photos/8819325/pexels-photo-8819325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>De otros paises</p>
+                    </div>
+                </div>
+
+                <button aria-label="Siguiente" class="carrusel__siguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carrusel__indicadores" role="tablist">
+                
+            </div>
+        </div>
     <footer>
 
     </footer>
+    <script src="/assets/js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>
