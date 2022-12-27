@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+header{
+    height: 11rem;
+    background-color: rgb(15, 15, 15);
+}
+.header-top-sign{
+    color: white;
+    background-color: black;
+    opacity: 90%;
+    font-weight: 700;
+}
+.header-top-sign span{
+    margin: 0 30px;
+}
+.header-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.2rem;
+    border-bottom: 1px solid rgb(36, 36, 36) 
+}
+.header-mid-menu{
+    width: 30%;
+    height: 100%;
+}
+.header-mid-logo{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background-image: url(../img/main-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 18rem;
+}
+.header-mid-cart{
+    width: 30%;
+    height: 100%;
+}
+.header-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+}
+.header-bottom-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid rgb(36, 36, 36);
+}
+.header-bottom-input input{
+    width: 80%;
+    height: 80%;
+    background-color: #0f0f0f;
+    border: none;
+    outline: none;
+    caret-color: white;
+}
+.header-bottom-input .search-logo{
+    background-image: url(../img/lupa2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: inline-block;
+}
+.header-bottom-input input::placeholder{
+    font-size: 1.8rem;
+}
+.header-bottom-input .input-text{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+.header-bottom-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.header-bottom-products a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
