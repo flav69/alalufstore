@@ -164,6 +164,7 @@ header{
 }
 .payments{
     display: inline-block;
+    width: 100%;
     
 }
 .payments h4{
@@ -195,7 +196,7 @@ header{
     box-shadow: 2px 3px 4px 0px #181819;
 }
 .contact{
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 .contact h4{
@@ -203,4 +204,70 @@ header{
     margin: 2rem 0 1rem;
     font-size: 1.8rem;
     border-bottom: 1px solid gray;
+}
+.phone-icon{
+    background-image: url(../img/footer-icons/number.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+.contact ul{
+    list-style: none;
+}
+.contact li{
+    display: flex;
+}
+.contact span{
+    width: 50%;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+.arroba-icon{
+    background-image: url(../img/footer-icons/arroba.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin-right: 1px;
+}
+.place-icon{
+    background-image: url(../img/footer-icons/wtf.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+}
+.social{
+    display: inline-block;
+    width: 100%;
+}
+.social h4{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid gray;
+}
+.ig-logo{
+    display: inline-block;
+    background-image: url(../img/footer-icons/ig-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.fb-logo{
+    display: inline-block;
+    background-image: url(../img/footer-icons/fb-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
