@@ -1,3 +1,7 @@
+:root {
+    --black-principal: rgb(15, 15, 15);
+    --white-principal: white;
+  }
 *{
     box-sizing: border-box;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -8,13 +12,17 @@ html{
     font-size: 62.5%;
     /* 1rem = 10px */
 }
+
+/*  HEADER */
+
+
 header{
     height: 11rem;
-    background-color: rgb(15, 15, 15);
+    background-color: var(--black-principal);
 }
 .header-top-sign{
-    color: white;
-    background-color: black;
+    color: var(--white-principal);
+    background-color: var(--black-principal);
     opacity: 90%;
     font-weight: 700;
 }
@@ -44,7 +52,7 @@ header{
     height: 2rem;
 }
 .header-mid-menu span{
-    color: white;
+    color: var(--white-principal);
     font-size: 1.1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -93,10 +101,10 @@ header{
 .header-bottom-input input{
     width: 80%;
     height: 80%;
-    background-color: #0f0f0f;
+    background-color: var(--black-principal);
     border: none;
     outline: none;
-    caret-color: white;
+    caret-color: var(--white-principal);
 }
 .header-bottom-input .search-logo{
     background-image: url(../img/lupa2.png);
@@ -108,11 +116,12 @@ header{
     display: inline-block;
 }
 .header-bottom-input input::placeholder{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    opacity: 0.5;
 }
 .header-bottom-input .input-text{
     text-decoration: none;
-    color: white;
+    color: var(--white-principal);
     font-size: 1.8rem;
 }
 .header-bottom-products{
@@ -125,15 +134,85 @@ header{
 }
 .header-bottom-products a{
     text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 100;
+    color: var(--white-principal);
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* BODY */
+
+    /* carrusel */
+
+.carrusel{
+    width: 100%;
+    margin-top: 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.carrusel__contenedor{
+    width: 100%;
+    position: relative;
+}
+.carrusel__anterior,.carrusel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: var(--white-principal);
+    border-radius: 8px;
+    color: var(--black-principal);
+    z-index: 1;
+
+ 
+}
+.carrusel__anterior{
+    left: 5px;
+}
+
+.carrusel__siguiente{
+    right: 5px;
+}
+.carrusel__item img{
+    height: 100%;
+    width: 100%;
+
+}
+.carrusel__lista{
+    overflow: hidden;
+}
+.carrusel__item{
+    text-align: center;
+    max-height: 400px;
+
+}
+.carrusel__item p{
+    color: var(--black-principal);
+
+}
+
+.carrusel__anterior:hover,.carrusel__siguiente:hover{
+background-color: gray;
+}
+
+.carrusel__indicadores .glider-dot{
+    width: 38px;
+    height: 4px;
+}
+.carrusel__indicadores .glider-dot.active{
+    background-color: black;
 }
 .middle-box{
     display: block;
     height: 100rem;
     background-color: black;
 }
+
+/*  FOOTER */
 .footer{
     padding: 0 2rem 2rem;
     display: flex;
