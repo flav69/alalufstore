@@ -2,6 +2,9 @@
     --black-principal: rgb(15, 15, 15);
     --white-principal: white;
     --beige--header: rgb(110, 102, 102);
+    --secondary--color: #3f2028;
+    --margin-section: 3em;
+    --padding-section: 2em;
   }
 *{
     box-sizing: border-box;
@@ -14,7 +17,7 @@ html{
     /* 1rem = 10px */
 }
 
-/*  HEADER */
+                        /*  HEADER */
 
 
 header{
@@ -89,15 +92,13 @@ header{
 
 
 
-/* BODY */
+                        /* BODY */
 
-    /* carrusel */
+                        /* carrusel */
 
 .carrusel{
     width: 100%;
-    margin-top: 0;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: var(--margin-section);
 }
 .carrusel__contenedor{
     width: 100%;
@@ -118,7 +119,6 @@ header{
     color: var(--black-principal);
     z-index: 1;
 
- 
 }
 .carrusel__anterior{
     left: 5px;
@@ -146,7 +146,10 @@ header{
 }
 
 .carrusel__anterior:hover,.carrusel__siguiente:hover{
-background-color: gray;
+background-color: var(--black-principal);
+color: var(--white-principal);
+cursor: pointer;
+
 }
 
 .carrusel__indicadores .glider-dot{
@@ -162,15 +165,119 @@ background-color: gray;
     background-color: var(--black-principal);
 }
 
-/*  FOOTER */
+
+                    /* Promociones Section*/
+
+.promociones{
+    margin: var(--margin-section);
+    height: auto;
+    padding: 0 var(--padding-section);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2em;
+    flex-grow: 1;
+}
+.promo{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 2rem;
+}
+.promo-title{
+    text-align: center;
+    font-size: 3.2em;
+}
+.promo-text{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -2em;
+}
+.promo-discount{
+    padding: 1rem;
+    margin: 0 2rem;
+    background-color: var(--beige--header);
+    border-radius: 3px;
+}
+.promo-discount p {
+    text-align: center;
+}
+.promo{
+    background-position: center;
+    position: relative;
+    z-index: 5;
+}
+.promo::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    margin: -20px;
+    z-index: 1;
+
+
+}
+.promo:first-child{
+    background-image: url("../img/promo-img/tshirt.jpg");
+    background-position: 50% 70%;
+    background-size: 220px 250px;
+    background-repeat: no-repeat;
+}
+
+
+.promo:nth-child(2){
+    background-image: url("../img/promo-img/shorts.jpeg");
+}
+.promo:nth-child(3){
+    background-image: url("../img/promo-img/clothes.jpeg");
+    background-position: 50% 70%;
+    background-size: 220px 250px;
+    background-repeat: no-repeat;
+}
+.promo:nth-child(4){
+    background-image: url("../img/promo-img/shoes.jpeg");
+    background-position: 50% 70%;
+    background-size: 420px auto;
+    background-repeat: no-repeat;
+}
+.promo:nth-child(5){
+    background-image: url("../img/promo-img/cap.jpg");
+    background-position: 20% 70%;
+    background-size: 420px auto;
+    background-repeat: no-repeat;
+}
+
+.promo-title,.promo-text,.promo-discount{
+    color: white;
+    z-index: 10;
+}
+.promo-discount:hover{
+    /* background-color:   #494956; */
+    background-color: var(--secondary--color);
+}
+.promo:hover{
+    cursor: pointer;
+}
+
+
+                        /*  FOOTER */
 .footer{
-    padding: 0 2rem 2rem;
+    padding: 0 var(--padding-section);
     display: flex;
     background: var(--white-principal);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: var(--margin-section);
 }
 .footer-nav{
     display: inline-block;
@@ -300,3 +407,4 @@ background-color: gray;
     height: 35px;
     cursor: pointer;
 }
+
