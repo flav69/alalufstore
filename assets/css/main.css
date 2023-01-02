@@ -88,8 +88,8 @@ header{
     margin-right: 1em;
     display: flex;
     justify-content: center;
-    gap: 2em;
-}
+    gap: 3rem;
+}   
 .header-mid-search{
     font-size: 1.8em;
     color: var(--white-principal);
@@ -102,6 +102,47 @@ header{
 }
 
 
+@media only screen and (min-width: 768px){
+    header{
+        padding: 2rem 0;
+    }
+    .header-top-sign{
+        font-size: 1.3rem;
+        margin-top: -30px;
+    }
+    .header-mid{
+        padding:  4rem 0;
+        
+    }
+
+  
+    .header-mid-menu .menu{
+        height: 3rem;
+    }
+    .header-mid-menu:hover, .header-mid-cart:hover, .header-mid-search:hover{
+        cursor: pointer;
+        filter: opacity(.6);
+    }
+   
+    .header-mid-menu span{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .header-mid-logo .logo{
+        width: 13rem;
+    }
+    .header-mid-container{
+        gap: 8rem;
+    }
+    .header-mid-container .header-mid-search, .header-mid-cart{
+        font-size: 3rem;
+    }
+    .header-mid-search{
+        background-color: var(--black-principal);
+        padding: .2rem;
+        border-radius: 10px;
+    }
+}
 
 
                         /* BODY */
