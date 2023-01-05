@@ -56,7 +56,7 @@ header{
     align-items: center;
     width: 30%;
 }
-.header-mid-menu .menu{
+.header-mid-menu .header-mid-menu-cont{
     background-image: url(../img/menu-icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -101,7 +101,86 @@ header{
 }
 
 
+                    /* MENU DESPLEGABLE */
+.menu-active{
+    left: 0;    
+    visibility: visible;
 
+}
+.menu{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80vw;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5 ease;
+}
+.menu-container-cruz{
+    padding: .5rem ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid var(--filter-color);
+}
+.menu-container-cruz i{
+    font-size: 2.5rem;
+    z-index: 1001;
+    color: #565656;
+}
+.menu-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+.menu-lista .menu-item{
+    border-bottom: 1px solid var(--filter-color);
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #323232;
+}
+.menu-item a p{
+    font-size: 1.3rem;
+    font-family: 'Open Sans';
+}
+
+.menu-container-login{
+    margin-top: 200px;
+    padding: 1.5rem;
+    display: flex;
+    flex-basis: 50%;
+    gap: 2rem;
+}
+.menu-photo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-photo i{
+    font-size: 4.5rem;
+}
+.menu-container-logintext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+.menu-container-logintext p{
+    font-size: 1.1rem;
+}
 
 
                         /* BODY */
