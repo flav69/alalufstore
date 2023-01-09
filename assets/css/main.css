@@ -105,6 +105,39 @@ header{
     font-weight: 100;
 }
 
+.buscador{
+    padding: 0;
+    margin-top: 1.5rem;
+    
+}
+.buscador-input{
+    margin: 0;
+    width: 70%;
+    margin-left: 1rem;
+    padding: 3px;
+    font-size: 12px;
+    border-width: 1px;
+    border-color: rgb(110, 102, 102);
+    background-color: #ececec;
+    border-radius: 4px;
+    color: #2d2d2d;
+    border-style: ridge;
+    box-shadow: 0px 0px 11px rgb(66 66 66 / 75%);
+    text-shadow: 0px 0px 5px rgb(66 66 66 / 75%);
+}
+.buscador-input:focus{
+    color: var(--secondary--color);
+}
+.buscador-button{
+    padding: .35em .8rem;
+    font-weight: 900;
+    margin-left: .4rem;
+    background-color: var(--black-principal);
+    color: var(--filter-color);
+    border-radius: 4px;
+    display: inline;
+}
+
 
                     /* MENU DESPLEGABLE */
 
@@ -195,6 +228,9 @@ header{
 .menu-photo i{
     font-size: 4.5rem;
 }
+.menu-container-cruz i:hover{
+    cursor: pointer;
+}
 .menu-container-logintext{
     display: flex;
     flex-direction: column;
@@ -204,6 +240,11 @@ header{
 }
 .menu-container-logintext p{
     font-size: 1.1rem;
+}
+.fa-grip-lines-vertical{
+    display: none;
+    visibility: hidden;
+    margin-top: -20px;    
 }
 
 
@@ -713,11 +754,11 @@ cursor: pointer;
             padding: 2rem 0;
         }
         .header-top-sign{
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-top: -30px;
         }
         .header-mid{
-            padding:  4rem 0;
+            padding:  3.5rem 0;
             
         }
     
@@ -726,7 +767,7 @@ cursor: pointer;
 
         }
         .header-mid-menu .menu{
-            height: 3rem;
+            height: 2.5rem;
         }
         .header-mid-menu:hover, .header-mid-cart:hover, .header-mid-search:hover{
             cursor: pointer;
@@ -734,17 +775,17 @@ cursor: pointer;
         }
        
         .header-mid-menu span{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-left: 1rem;
         }
         .header-mid-logo .logo{
-            width: 13rem;
+            width: 10rem;
         }
         .header-mid-container{
             gap: 8rem;
         }
         .header-mid-container .header-mid-search, .header-mid-cart{
-            font-size: 3rem;
+            font-size: 2.4rem;
         }
         .header-mid-search{
             background-color: var(--black-principal);
@@ -753,7 +794,10 @@ cursor: pointer;
         }
 
         .menu-container-cruz{
-            padding-bottom: 2rem;
+            padding-bottom: 2.5rem;
+        }
+        .menu-container-cruz i {
+            font-size: 3rem;
         }
         .menu-item{
             padding: 3rem 1.5rem;
@@ -790,6 +834,12 @@ cursor: pointer;
         .menu-container-logintext p{
             font-size: 1.2rem;
         }
+        .fa-grip-lines-vertical{
+            display: block;
+            visibility: visible;
+            margin-top: 0;    
+        }
+           
         .carrusel{
             max-width: 1200px;
             margin-left: auto;
@@ -843,6 +893,13 @@ cursor: pointer;
 
 
     @media only screen and (min-width: 1024px){
+
+        .header-mid-container .header-mid-search, .header-mid-cart{
+            font-size: 2.6rem;
+        }
+        .header-mid-logo .logo{
+            width: 14rem;
+        }
         .carrusel{
             margin-top: 6rem;
             max-width: 1024px;
