@@ -106,8 +106,7 @@ header{
 }
 
 .buscador{
-    padding: 0;
-    margin-top: 1.5rem;
+    display: none;
     
 }
 .buscador-input{
@@ -119,7 +118,7 @@ header{
     border-width: 1px;
     border-color: rgb(110, 102, 102);
     background-color: #ececec;
-    border-radius: 4px;
+    border-radius: 8px;
     color: #2d2d2d;
     border-style: ridge;
     box-shadow: 0px 0px 11px rgb(66 66 66 / 75%);
@@ -134,8 +133,15 @@ header{
     margin-left: .4rem;
     background-color: var(--black-principal);
     color: var(--filter-color);
-    border-radius: 4px;
+    border-radius: 8px;
     display: inline;
+}
+
+.buscador-active{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -792,7 +798,17 @@ cursor: pointer;
             padding: .2rem;
             border-radius: 10px;
         }
-
+        
+        .buscador{
+            padding: 3rem 0;
+        }
+        .buscador-input{
+            padding: 1rem;
+        }
+        .buscador-button{
+                padding: 1rem 1.5rem;
+                font-size: 1.5rem;
+        }
         .menu-container-cruz{
             padding-bottom: 2.5rem;
         }
@@ -841,6 +857,7 @@ cursor: pointer;
         }
            
         .carrusel{
+            margin-top: 4rem;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
@@ -961,3 +978,143 @@ cursor: pointer;
         }
 
     }
+
+    @media only screen and (min-width: 2560px){
+        .header-top{
+            display: flex;
+            align-content: center;
+            margin-top: 3rem;
+        }
+        .header-top-sign span {
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+        .header-mid{
+            height: 40rem;
+        }
+        .header-mid-logo .logo{
+          width: 92rem;  
+          height: 200px;    
+        }
+        .header-mid-menu .header-mid-menu-cont{
+            height: 10rem;
+            width: 7rem;
+        }
+        .header-mid-menu span{
+            font-size: 5rem;
+        }
+        .header-mid-search i{
+            font-size: 8rem;
+        }
+        .header-mid-cart i{
+            font-size: 8rem;
+        }
+        .carrusel{
+            display: none;
+        }
+        .promociones{
+            gap: 10rem;
+            margin: 12rem 0;
+            padding: 0 4rem;
+        }
+        .promo{
+            min-width: 400px;
+            min-height: 550px;
+            grid-area: 4rem;
+        }
+        .promo-title{
+            font-size: 6rem;
+        }
+        .promo-text{
+            font-size: 3rem;
+        }
+        .promo-discount{
+            padding: 4rem;
+        }
+        .promo-discount p{
+            font-size: 3rem;
+        }
+
+        .categories-filter{
+            gap: 9rem;
+            margin-bottom: 4rem;
+        }
+        .filter{
+            padding: 3rem;
+        }
+        .filter p{
+            font-size: 4rem;
+        }
+
+        .items-container{
+            gap: 10rem;
+        }
+        .item{
+            width: 400px;
+            height: auto;
+        }
+        .item-top{
+            min-height: 400px;
+        }
+        .item-top-discount{
+            padding: 3rem 3rem;
+            font-size: 3rem;
+
+        }
+        .item-bottom{
+            gap: 4rem;
+            padding: 2rem;
+        }
+        .item-bottom-title{
+            font-size: 4rem;
+        }
+        .item-bottom-price{
+            gap: 4rem;
+        }
+        .item-bottom-price__after, .item-bottom-price__before{
+            font-size: 5rem;
+        }
+        .item-bottom-cuotas{
+            outline-width: 8px;
+        }
+        .item-bottom-cuotas p{
+            font-size: 4rem;
+        }
+        .more-container{
+            min-width: 1000px;
+            padding: 5rem ;
+            margin: 8rem 3.5rem;
+        }
+        .items-more-products p{
+            font-size: 4.5rem;
+        }
+        .footer{
+            margin-top: 8rem;
+        }
+       .footer-nav h4, .payments h4, .shipping h4, .contact h4, .social h4{
+        font-size: 6rem;
+        border-bottom-width: 4px;
+       }
+       .footer-nav ul .wrap1, .contact li span{
+        font-size: 4rem;
+        margin-bottom: 4rem;
+       }
+       .payments ul{
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+
+       }
+       .payments ul img, .shipping img{
+        min-height: 100px;
+       }
+    
+       .contact li div{
+        width: 60px;
+        height: 60px;
+       }
+       .social a{
+        width: 100px;
+        height: 100px;
+       }
+    }   
