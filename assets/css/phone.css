@@ -22,7 +22,7 @@ header{
 }
 .header-top-sign{
     color: var(--white-principal);
-    background-color: var(--black-principal);
+    background-color: black;
     opacity: 90%;
     font-weight: 700;
 }
@@ -146,8 +146,8 @@ header{
 .carrusel{
     width: 100%;
     margin-top: 0;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .carrusel__contenedor{
     width: 100%;
