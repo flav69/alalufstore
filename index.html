@@ -9,12 +9,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="assets/css/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">      <!-- GLIDER -->
+    <link rel="stylesheet" href="assets/css/main.css">                                            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-
+    <!-- Background Animation -->
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title"></div>
+    </section>
+    <!-- Background Animation End -->
     <!-- Header -->
 
+        <!-- Menu Desplegable -->
+    <div class="menu ">
+        <div class="menu-container-cruz">
+            <i class="uil uil-times"></i>
+        </div>
+        <div class="menu-lista">
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Inicio</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Productos</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Tabla de talles</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Cambio y Devolucion</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Ayuda y Contactos</p>
+                </a>
+            </li>
+        </div>
+        <div class="menu-container-login">
+            <div class="menu-photo">
+                <i class="uil uil-user-circle"></i>
+            </div>
+            <div class="menu-container-logintext">
+                <p class="menu-new-account">Crear nueva cuenta</p>
+                <i class="fa-solid fa-grip-lines-vertical"></i>
+                <p class="menu-login">Iniciar Sesion</p>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+
     <header>
+        <div class="bg-overlay"></div>
         <div class="header-top">
             <marquee behavior="scroll" direction="left" scrollamount="6" class="header-top-sign" >
                 <span>ENVÍOS INTERNACIONALES DISPONIBLES</span>
@@ -24,23 +81,20 @@
         </div>
         <div class="header-mid">
             <div class="header-mid-menu">
-                <div class="menu"></div>
+                <div class="header-mid-menu-cont">
+                </div>
                 <span>MENÚ</span>
             </div>
             <div class="header-mid-logo">
                 <div class="logo"></div>
             </div>
-            <div class="header-mid-cart">
-                <div class="cart"></div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="header-bottom-input">
-                <input type="text" placeholder="Buscar">
-                <div class="search-logo"></div>
-            </div>
-            <div class="header-bottom-products">
-                <a href="">Productos</a>
+            <div class="header-mid-container">
+                    <div class="header-mid-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                <div class="header-mid-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
     </header>
@@ -48,11 +102,18 @@
     <!-- Header End -->
     <!-- Main -->
 
+    <div class="buscador">
+        <label for="buscador-input"></label>
+        <input type="text" name="" id="buscador-input"   class="buscador-input">
+        <input type="button" value=">" class="buscador-button">
+    </div>
+    <!-- MAIN -->
+    
     <main>
         <!-- Carrusel -->
         <div class="carrusel">
 
-            <div class="carrusel__contenedor">
+            <div class="carrusel-container">
 
                 <button aria-label="Anterior" class="carrusel__anterior">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -95,6 +156,211 @@
             </div>
         </div>
         <!-- Carrusel End-->
+
+        <!-- Shop Section -->
+
+        <section class="promociones">
+            <div class="promo">
+                <h3 class="promo-title">REMERAS</h3>
+                <p class="promo-text">100% algodón</p>
+                <div class="promo-discount">
+                    <p class="promo-discount-title">VER REMERAS</p>
+                </div>
+            </div>
+            <div class="promo">
+                <h3 class="promo-title">SHORTS</h3>
+                <p class="promo-text">10% OFF</p>
+                <div class="promo-discount">
+                    <p class="promo-discount-title">HASTA 20% OFF</p>
+                </div>
+            </div>
+            <div class="promo">
+                <h3 class="promo-title">COMBOS</h3>
+                <p class="promo-text">REMERA + SHORT + ZAPAS</p>
+                <div class="promo-discount">
+                    <p class="promo-discount-title">15% OFF</p>
+                </div>
+            </div>
+            <div class="promo">
+                <h3 class="promo-title">ZAPAS</h3>
+                <p class="promo-text"></p>
+                <div class="promo-discount">
+                    <p class="promo-discount-title">VER PROMOCIONES</p>
+                </div>
+            </div>
+            <div class="promo">
+                <h3 class="promo-title">GORRAS</h3>
+                <p class="promo-text"></p>
+                <div class="promo-discount">
+                    <p class="promo-discount-title">VER GORRAS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Items Section -->
+        <div class="items-section">
+
+            <div class="categories-filter">
+                <div class="filter">
+                    <p>Remeras</p>
+                </div>
+                <div class="filter">
+                    <p>Buzos</p>
+                </div>
+                <div class="filter">
+                    <p>Boxers</p>
+                </div>
+                <div class="filter">
+                    <p>Gorras</p>
+                </div>
+                <div class="filter">
+                    <p>Zapas</p>
+                </div>
+                <div class="filter">
+                    <p>Jeans</p>
+                </div>
+                <div class="filter">
+                    <p>Shorts</p>
+                </div>
+            </div>
+
+            <div class="items-container">
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container uno"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">REMERAS PACK X3</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container dos"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">COMBO VERANO TRAVEL </h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container tres"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">SNEAKERS TRAVIS SCOTT</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount disabled">15% OFF</div>
+                        <div class="item-top-img-container cuatro"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">GORRA LEBRON</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before disabled">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount disabled">15% OFF</div>
+                        <div class="item-top-img-container cinco"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">JEAN 100% CALIDAD</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before disabled">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container seis"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">REMERAS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container siete"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">GORRA DE LOS LAKERS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container ocho"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">JHON FOOS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="items-more-products">
+                <div class="more-container">
+                    <p>Ver todos los productos</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -104,16 +370,16 @@
             <div class="footer-nav">
                 <h4>NAVEGACIÓN</h4>
                 <ul>
-                    <li class="wrap1">Inicio</li>
-                    <li class="wrap1">Hombre</li>
-                    <li class="wrap1">Mujer</li>
-                    <li class="wrap1">Quiénes Somos</li>
-                    <li class="wrap1">Tabla de talles</li>
-                    <li class="wrap1">Quedate en casa</li>
-                    <li class="wrap1">Cómo comprar</li>
-                    <li class="wrap1">Dónde estamos</li>
-                    <li class="wrap1">Contacto</li>
-                    <li class="wrap1">Ventas por mayor</li>
+                    <li class="wrap1"><p>Inicio</p></li>
+                    <li class="wrap1"><p>Hombre</p></li>
+                    <li class="wrap1"><p>Quiénes Somos</p> </li>
+                    <li class="wrap1"><p>Mujer</p></li>
+                    <li class="wrap1"><p>Tabla de talles</p> </li>
+                    <li class="wrap1"><p>Quedate en casa</p> </li>
+                    <li class="wrap1"><p>Cómo comprar</p> </li>
+                    <li class="wrap1"><p>Dónde estamos</p> </li>
+                    <li class="wrap1"><p>Contacto</p></li>
+                    <li class="wrap1"><p>Ventas por mayor</p> </li>
                 </ul>
             </div>
             <div class="payments">
@@ -167,6 +433,8 @@
     <!-- Footer End-->
 
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/buscador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>
