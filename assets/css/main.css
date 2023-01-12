@@ -44,6 +44,12 @@ html{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.wrapper{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
 #stars{
     width: 1px;
     height: 1px;
