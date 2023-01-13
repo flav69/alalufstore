@@ -891,9 +891,10 @@ cursor: pointer;
 .carrusel__indicadores .glider-dot{
     width: 38px;
     height: 4px;
+    background-color: #0f0f0f;
 }
 .carrusel__indicadores .glider-dot.active{
-    background-color: var(--black-principal);
+    background-color: white;
 }
 .middle-box{
     display: block;
@@ -1437,7 +1438,7 @@ cursor: pointer;
         }
            
         .carrusel{
-            margin-top: 4rem;
+            margin-top: 0;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
