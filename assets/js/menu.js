@@ -2,7 +2,6 @@
 const menuButton = document.querySelector('.header-mid-menu');
 const menu = document.querySelector('.menu');
 const cruz = document.querySelector('.menu-container-cruz i');
-const nav_bg_overlay = document.querySelector('.bg-overlay');
 
 
 
