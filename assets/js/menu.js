@@ -2,7 +2,7 @@
 const menuButton = document.querySelector('.header-mid-menu');
 const menu = document.querySelector('.menu');
 const cruz = document.querySelector('.menu-container-cruz i');
-
+const nav_bg_overlay = document.querySelector('.bg-overlay');
 
 
 function toggleMenu(){
@@ -18,3 +18,4 @@ function toggleMenu(){
 
 menuButton.addEventListener('click',toggleMenu);
 cruz.addEventListener('click',toggleMenu);
+nav_bg_overlay.addEventListener('click',toggleMenu);
