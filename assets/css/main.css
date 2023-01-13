@@ -937,10 +937,9 @@ cursor: pointer;
 .promo-discount{
     padding: 1rem;
     margin: 0 2rem;
-    background-color: var(--beige--header);
+    background-color: var(--beige--header), transparent;
     border-radius: 3px;
     transition: all .5s ease;
-
 }
 .promo-discount p {
     text-align: center;
@@ -1017,19 +1016,17 @@ cursor: pointer;
     margin: 0 1rem;
     margin-bottom: 2rem;
 }
-
 .filter{
     padding: 1em;
     background-color: var(--filter-color);
     border-radius: 4px;
     transition: all .5s ease;
+    background-color: rgba(150, 100, 100, 0.3);
 }
 .filter p{
-    color: var(--black-principal);
+    color: white;
     text-transform: uppercase;
-
 }
-
 .filter:hover{
     filter: brightness(1.05);
     cursor: pointer;
@@ -1038,7 +1035,6 @@ cursor: pointer;
     display: none;
 } 
                             /* ITEMS */
-
 .items-container{
     display: flex;
     flex-flow: row wrap;
@@ -1046,7 +1042,15 @@ cursor: pointer;
     gap: 2rem;
     margin: 0 1rem;
     height: auto;
-
+}
+.items-container h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+.items-container p{
+    color: white;
 }
 .items-container .item{
     display: flex;
@@ -1057,9 +1061,8 @@ cursor: pointer;
 .item{
     width: 140px;
     transition: all .5s ease;
-
 }
- .item:hover .item-bottom-title{
+.item:hover .item-bottom-title{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -1147,7 +1150,6 @@ cursor: pointer;
     color: #6B6A6A;
     font-weight: 900;
 }
-
 .items-more-products{
     display: flex;
     justify-content: center;
@@ -1158,7 +1160,8 @@ cursor: pointer;
     min-width: 250px;
     padding: 1rem 1rem;
     margin: 2rem 3.5rem;
-    background-color: var(--beige--header);
+    background-color: rgba(150, 100, 100, 0.3);
+    border-radius: 5px;
     transition: all .5s ease;
 
 }
