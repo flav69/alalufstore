@@ -20,7 +20,7 @@
 html{
     font-size: 62.5%;
     /* 1rem = 10px */
-    min-height: 533%;
+    min-height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 .body{
@@ -42,7 +42,6 @@ html{
 }
 #title span{
     background: -webkit-linear-gradient(white, #38495a);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .wrapper{
