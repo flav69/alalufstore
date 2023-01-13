@@ -240,7 +240,7 @@ header{
 .menu-container-logintext{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
 }
@@ -912,25 +912,16 @@ cursor: pointer;
     @media only screen and (min-width: 1024px){
 
         .header-mid-container .header-mid-search, .header-mid-cart{
-            font-size: 2.6rem;
+            font-size: 2rem;
         }
         .header-mid-logo .logo{
-            width: 14rem;
+            width: 12rem;
         }
+        
         .carrusel{
             margin-top: 6rem;
             max-width: 1024px;
         }
-        .menu-item a p {
-            font-size: 1.6rem;
-        }
-        .menu-container-logintext p{
-            font-size: 1.5rem;
-        }
-        .menu-container-logintext i{
-            font-size: 1.8rem;
-        }
-
         .promo-title{
             font-size: 4rem;
         }
@@ -979,6 +970,34 @@ cursor: pointer;
 
     }
 
+    @media only screen and (min-width: 1440px){
+        .header-mid-menu .header-mid-menu-cont{
+            height: 10rem;
+        }
+        .header-mid-menu span{
+            font-size: 2rem;
+        }
+        .menu-container-cruz i{
+            font-size: 4rem;
+        }
+        .menu-lista .menu-item{
+            padding: 3rem;
+        }
+        .menu-item a p{
+            font-size: 2.3rem;
+        }   
+        .menu-container-logintext p{
+            font-size: 2rem;
+        }
+        .fa-grip-lines-vertical{
+            font-size: 5rem;
+            text-align: center;
+        }
+        .menu-photo i{
+            font-size: 5rem;
+        }
+    }
+    
     @media only screen and (min-width: 2560px){
         .header-top{
             display: flex;
@@ -1011,6 +1030,17 @@ cursor: pointer;
         }
         .carrusel{
             display: none;
+        }
+        .buscador-input{
+            padding: 4rem 0;
+            width: 50%;
+            margin-top: 4rem;
+        }
+        .buscador-button{
+            padding: 1rem 4rem;
+            margin-left: 3rem;
+            margin-top: 4rem;
+            font-size: 6rem;
         }
         .promociones{
             gap: 10rem;
