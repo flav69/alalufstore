@@ -605,13 +605,11 @@ img{
     height: 100px;
     width: 100px;
 }
-section{
+.promociones{
     margin: var(--margin-section);
     padding: 0 var(--padding-section);
 }
                         /*  HEADER */
-
-
 header{
     background-color: var(--black-principal);
 }
