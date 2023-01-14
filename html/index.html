@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alaluf Store</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">      <!-- GLIDER -->
-    <link rel="stylesheet" href="assets/css/main.css">                                            
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <link rel="stylesheet" href="../assets/css/main.css">                                           
+    <link rel="stylesheet" href="../assets/css/componentes.css">    
+    <link rel="stylesheet" href="../assets/css/phone.css">
 </head>
 <body>
-
+    <!-- Background Animation -->
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title"></div>
+    </section>
+    <!-- Background Animation End -->
+    <!-- Header -->
 
         <!-- Menu Desplegable -->
     <div class="menu ">
@@ -21,12 +35,12 @@
         </div>
         <div class="menu-lista">
             <li class="menu-item">
-                <a href="" class="menu-item-link">
+                <a href="index.html" class="menu-item-link">
                     <p class="menu-item-text">Inicio</p>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-item-link">
+                <a href="products.html" class="menu-item-link">
                     <p class="menu-item-text">Productos</p>
                 </a>
             </li>
@@ -37,7 +51,7 @@
             </li>
             <li class="menu-item">
                 <a href="" class="menu-item-link">
-                    <p class="menu-item-text">Cambio y Devolucion</p>
+                    <p class="menu-item-text">Cambio y Devolución</p>
                 </a>
             </li>
             <li class="menu-item">
@@ -53,15 +67,32 @@
             <div class="menu-container-logintext">
                 <p class="menu-new-account">Crear nueva cuenta</p>
                 <i class="fa-solid fa-grip-lines-vertical"></i>
-                <p class="menu-login">Iniciar Sesion</p>
+                <p class="menu-login">Iniciar Sesión</p>
             </div>
+        </div>
+    </div>
+
+        <!-- Carrito -->
+        
+    
+    <div class="carrito">
+        <div class="carrito-top">
+            <h2 class="carrito-top-title">Carrito de Compras</h2>
+            <i class="uil uil-times carrito-cruz"></i>
+        </div>
+        <div class="carrito-bottom">
+            <div class="carrito-bottom-title">Productos</div>
+            <div class="carrito-bottom-title">Subtotal</div>
+        </div>
+        <div class="carrito-products">
+            <p class="carrito-empty">EL CARRITO DE COMPRAS ESTÁ VACIO.</p>
         </div>
     </div>
     <!-- HEADER -->
 
     <header>
         <div class="bg-overlay"></div>
-
+        <div class="carrito-overlay"></div>
         <div class="header-top">
             <marquee behavior="scroll" direction="left" scrollamount="6" class="header-top-sign" >
                 <span>ENVÍOS INTERNACIONALES DISPONIBLES</span>
@@ -86,10 +117,12 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
-            
         </div>
-
     </header>
+
+    <!-- Header End -->
+    <!-- Main -->
+
     <div class="buscador">
         <label for="buscador-input"></label>
         <input type="text" name="" id="buscador-input"   class="buscador-input">
@@ -109,28 +142,28 @@
 
                 <div class="carrusel__lista">
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>Ropa de Viajes</p>
+                        <img src="..//assets/img/carrousel/1.png" alt="">
+                        <p>Mujer</p>
                     </div>
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <img src="../assets/img/carrousel/3.png" alt="Hombre">
                         <p> Camisas</p>
                     </div>
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>Ropa Elegante</p>
+                        <img src="../assets/img/carrousel/2.png" alt="">
+                        <p>Jeans</p>
                     </div>
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/4794849/pexels-photo-4794849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>De entrecasa</p>
+                        <img src="../assets/img/carrousel/4.png" alt="">
+                        <p>Anteojos</p>
                     </div>
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/5705514/pexels-photo-5705514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>Para el colegio</p>
+                        <img src="../assets/img/carrousel/5.png" alt="">
+                        <p>Accesorios</p>
                     </div>
                     <div class="carrusel__item">
-                        <img src="https://images.pexels.com/photos/8819325/pexels-photo-8819325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>De otros paises</p>
+                        <img src="../assets/img/carrousel/6.png" alt="">
+                        <p>Zapatillas</p>
                     </div>
                 </div>
 
@@ -143,6 +176,7 @@
                 
             </div>
         </div>
+        <!-- Carrusel End-->
 
         <!-- Shop Section -->
 
@@ -151,35 +185,35 @@
                 <h3 class="promo-title">REMERAS</h3>
                 <p class="promo-text">100% algodón</p>
                 <div class="promo-discount">
-                    <p class="promo-discount-title">VER REMERAS</p>
+                    <p class="promo-discount-title">VER</p>
                 </div>
             </div>
             <div class="promo">
                 <h3 class="promo-title">SHORTS</h3>
                 <p class="promo-text">10% OFF</p>
                 <div class="promo-discount">
-                    <p class="promo-discount-title">HASTA 20% OFF</p>
+                    <p class="promo-discount-title">VER</p>
                 </div>
             </div>
             <div class="promo">
                 <h3 class="promo-title">COMBOS</h3>
                 <p class="promo-text">REMERA + SHORT + ZAPAS</p>
                 <div class="promo-discount">
-                    <p class="promo-discount-title">15% OFF</p>
+                    <p class="promo-discount-title">VER</p>
                 </div>
             </div>
             <div class="promo">
                 <h3 class="promo-title">ZAPAS</h3>
                 <p class="promo-text"></p>
                 <div class="promo-discount">
-                    <p class="promo-discount-title">VER PROMOCIONES</p>
+                    <p class="promo-discount-title">VER</p>
                 </div>
             </div>
             <div class="promo">
                 <h3 class="promo-title">GORRAS</h3>
                 <p class="promo-text"></p>
                 <div class="promo-discount">
-                    <p class="promo-discount-title">VER GORRAS</p>
+                    <p class="promo-discount-title">VER</p>
                 </div>
             </div>
         </section>
@@ -210,6 +244,9 @@
                     <p>Shorts</p>
                 </div>
             </div>
+            <div class="other-filters">
+                
+            </div>
 
             <div class="items-container">
                 <div class="item">
@@ -224,7 +261,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -240,7 +277,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -256,7 +293,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -272,7 +309,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -288,7 +325,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -304,7 +341,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -320,7 +357,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -336,7 +373,7 @@
                             <p class="item-bottom-price__after">$1299</p>
                         </div>
                         <div class="item-bottom-cuotas">
-                            <p>3 Cuotas sin interes de <span>$429</span></p>
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
                         </div>
                     </div>
                 </div>
@@ -348,9 +385,10 @@
                 </div>
             </div>
         </div>
-
-
     </main>
+
+    <!-- Footer -->
+
     <footer>
         <div class="footer">
             <div class="footer-nav">
@@ -416,9 +454,12 @@
         </div>
     </footer>
 
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/buscador.js"></script>
+    <!-- Footer End-->
+
+    <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/buscador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>

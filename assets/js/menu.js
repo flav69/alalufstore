@@ -5,7 +5,6 @@ const cruz = document.querySelector('.menu-container-cruz i');
 const nav_bg_overlay = document.querySelector('.bg-overlay');
 
 
-
 function toggleMenu(){
     menu.classList.toggle('menu-active');
     nav_bg_overlay.classList.toggle('bg-overlay-active');
@@ -19,3 +18,4 @@ function toggleMenu(){
 
 menuButton.addEventListener('click',toggleMenu);
 cruz.addEventListener('click',toggleMenu);
+nav_bg_overlay.addEventListener('click',toggleMenu);
