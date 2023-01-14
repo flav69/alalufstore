@@ -1,0 +1,494 @@
+ :root {
+    --black-principal: rgb(15, 15, 15);
+    --white-principal: white;
+    --beige--header: rgb(110, 102, 102);
+    --secondary--color: #3f2028;
+    --margin-section: 3em;
+    --padding-section: 2em;
+    --filter-color:#ECECEC;
+    --index-base: 1;
+    --index-2: 10;
+    --index-3: 100;
+    --index-4: 1000;
+  }
+ /* Promociones Section*/
+
+.promociones{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2em;
+    flex-grow: 1;
+}
+.promo{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 0 2rem;
+}
+.promo-title{
+    text-align: center;
+    font-size: 3.2em;
+}
+.promo-text{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -2em;
+}
+.promo-discount{
+    padding: 1rem;
+    margin: 0 2rem;
+    background-color: #222222bb;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+.promo-discount p {
+    text-align: center;
+}
+.promo{
+    background-position: center;
+    position: relative;
+    z-index: var(--index-base);
+}
+.promo::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    margin: -20px;
+    z-index: var(--index-base);
+
+
+}
+.promo:first-child{
+    background-image: url("../img/promo-img/tshirt.jpg");
+    background-position: 50% 70%;
+    background-size: 220px 250px;
+    background-repeat: no-repeat;
+}
+
+
+.promo:nth-child(2){
+    background-image: url("../img/promo-img/shorts.jpeg");
+}
+.promo:nth-child(3){
+    background-image: url("../img/promo-img/clothes.jpeg");
+    background-position: 50% 70%;
+    background-size: 220px 250px;
+    background-repeat: no-repeat;
+}
+.promo:nth-child(4){
+    background-image: url("../img/promo-img/shoes.jpeg");
+    background-position: 50% 70%;
+    background-size: 420px auto;
+    background-repeat: no-repeat;
+}
+.promo:nth-child(5){
+    background-image: url("../img/promo-img/cap.jpg");
+    background-position: 20% 70%;
+    background-size: 420px auto;
+    background-repeat: no-repeat;
+}
+
+.promo-title,.promo-text,.promo-discount{
+    color: white;
+    z-index: var(--index-2);
+}
+.promo-discount:hover{
+    /* background-color:   #494956; */
+    background-color: var(--secondary--color);
+}
+.promo:hover{
+    cursor: pointer;
+}
+                                    /* iTEMS SECTION */
+
+                                        
+                            /* FILTROS */
+
+.filters{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.filter-title{
+    color: var(--white-principal);
+    font-size: 1.2rem;
+}
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding:  0 2rem;
+    width: 100%;
+}
+.filter-selector{
+    border-radius: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: sans-serif;
+    flex-basis: 80%;
+    max-width: 400px;
+    height: 35px;
+    flex-grow: 1;
+}
+.filter-button{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+    padding: .5rem;
+    width: 70px;
+    border-radius: 6px;
+    background-color: var(--secondary--color);
+    color: var(--white-principal);
+}
+
+
+                            /* ITEMS */
+.items-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 1rem;
+    height: auto;
+}
+.items-container h3{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 400;
+}
+.items-container p{
+    color: white;
+}
+.items-container .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.item{
+    width: 140px;
+    transition: all .5s ease;
+}
+.item:hover .item-bottom-title{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item-top{
+    background-color: #181819;
+    position: relative;
+    min-height: 150px;
+}
+.item-top-discount{
+    position: absolute;
+    color: white;
+    background-color: var(--secondary--color);
+    padding: 0.3rem;
+    border-radius: 2px;
+}
+.item-top-img-container{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item-top-img-container.uno{
+    background-image: url(../img/promo-img/tshirt.jpg);
+}
+.item-top-img-container.dos{
+    background-image: url(../img/promo-img/clothes.jpeg);
+}
+.item-top-img-container.tres{
+    background-image: url(../img/promo-img/shoes.jpeg);
+}
+.item-top-img-container.cuatro{
+    background-image: url(../img/promo-img/cap.jpg);
+}
+.item-top-img-container.cinco{
+    background-image: url(../img/promo-img/shorts.jpeg);
+}
+.item-top-img-container.seis{
+    background-image: url(../img/promo-img/tshirt.jpg);
+}
+.item-top-img-container.siete{
+    background-image: url(../img/promo-img/cap.jpg);
+}
+.item-top-img-container.ocho{
+    background-image: url(../img/promo-img/shoes.jpeg);
+}
+.item-bottom{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.item-bottom-title{
+    font-weight: 100;
+    font-family: 'Open Sans';
+    text-align: center;
+    white-space: pre-wrap;
+    transition: all .5s ease;
+
+}
+.item-bottom-price{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.item-bottom-price__before{
+    text-decoration: line-through;
+}
+.item-bottom-price__after{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.item-bottom-cuotas{
+    display: flex;
+    justify-content: center;
+    outline: 2px solid var(--filter-color);
+    border-radius: 5px 55px;
+    box-shadow: #090a0f 10px 10px;
+}
+.item-bottom-cuotas p{
+    padding: 1rem 0;
+    width: 90%;
+    text-align: center;
+}
+.item-bottom-cuotas span{
+    color: #6B6A6A;
+    font-weight: 900;
+}
+.items-more-products{
+    display: flex;
+    justify-content: center;
+}
+.more-container{
+    background-color: rebeccapurple;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 1rem 1rem;
+    margin: 2rem 3.5rem;
+    background-color: rgba(150, 100, 100, 0.3);
+    border-radius: 5px;
+    transition: all .5s ease;
+
+}
+.more-container:hover{
+    cursor: pointer;
+    background-color: var(--secondary--color);
+}
+.items-more-products p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--white-principal);
+}
+                         
+
+
+
+/*  RESPONSIVE WEB DESIGN */
+
+
+    /* PHONE */
+
+
+@media only screen and (min-width: 320px){
+    .promo:first-child, .promo:nth-child(3), .promo:nth-child(4), .promo:nth-child(5){
+        background-size: cover;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .promociones{
+        flex-flow: row wrap;
+        justify-content: center;
+    }   
+    .promo{
+        max-width: 45%;
+    }
+    .promo-discount-title{
+        font-size: 1.4rem;
+    }
+    .categories-filter{
+        justify-content: center;
+        gap: 3rem;
+    }
+    .filter{
+        padding: 1rem 1.5rem;
+    }
+    .filter p{
+        font-size: 1.3rem;
+    }
+
+    .items-container{
+        gap: 4rem;
+    }
+    .item-bottom-title{
+        font-size: 1.4rem;
+    }
+    .item-bottom-price__before{
+        font-size: 1.3rem;
+    }
+    .item-bottom-price__after{
+        font-size: 1.8rem;
+    }
+    .item-bottom-cuotas p{
+        padding: 1.5rem 0;
+        font-size: 1.3rem;
+    }
+    .item-top-discount{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
+
+
+    /* LAPTOP */
+
+
+@media only screen and (min-width: 1024px){
+
+
+    
+    .carrusel{
+        margin-top: 6rem;
+        max-width: 1024px;
+    }
+    .promo-title{
+        font-size: 4rem;
+    }
+    .promo{
+        max-width: 350px;
+    }
+    .promo-text{
+        font-size: 1.5rem;
+        margin-top: -1.5rem;
+    }
+    .promo-discount{
+        padding: 2rem 1.5rem;
+    }
+    .promo-discount p{
+        font-size: 1.5rem;
+    }
+    .categories-filter{
+        margin-top: 6rem;
+    }
+    .filter p{
+        font-size: 1.5rem;
+    }
+    .item{
+        width: 200px;
+    }
+    .item-top{
+        min-height: 250px;
+        min-width: 200px;
+    }
+    .item-bottom-title{
+        font-size: 1.5rem;
+    }
+    .item-bottom-price__after{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .item-bottom-price__before{
+        font-size: 1.3rem;
+    }
+    .item-bottom-cuotas p{
+        font-size: 1.5rem;
+    }
+    .items-container{
+        padding: 0 4rem;
+    }
+}
+
+
+@media only screen and (min-width: 2560px){
+    .promociones{
+        gap: 10rem;
+        margin: 12rem 0;
+        padding: 0 4rem;
+    }
+    .promo{
+        min-width: 400px;
+        min-height: 550px;
+        grid-area: 4rem;
+    }
+    .promo-title{
+        font-size: 6rem;
+    }
+    .promo-text{
+        font-size: 3rem;
+    }
+    .promo-discount{
+        padding: 4rem;
+    }
+    .promo-discount p{
+        font-size: 3rem;
+    }
+
+    .categories-filter{
+        gap: 9rem;
+        margin-bottom: 4rem;
+    }
+    .filter{
+        padding: 3rem;
+    }
+    .filter p{
+        font-size: 4rem;
+    }
+
+    .items-container{
+        gap: 10rem;
+    }
+    .item{
+        width: 400px;
+        height: auto;
+    }
+    .item-top{
+        min-height: 400px;
+    }
+    .item-top-discount{
+        padding: 3rem 3rem;
+        font-size: 3rem;
+
+    }
+    .item-bottom{
+        gap: 4rem;
+        padding: 2rem;
+    }
+    .item-bottom-title{
+        font-size: 4rem;
+    }
+    .item-bottom-price{
+        gap: 4rem;
+    }
+    .item-bottom-price__after, .item-bottom-price__before{
+        font-size: 5rem;
+    }
+    .item-bottom-cuotas{
+        outline-width: 8px;
+    }
+    .item-bottom-cuotas p{
+        font-size: 4rem;
+    }        
+}   
