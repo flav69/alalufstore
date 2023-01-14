@@ -728,6 +728,7 @@ header{
     left: -100%;
     height: 100vh;
     width: 80vw;
+    max-width: 500px;
     background-color: white;
     z-index: var(--index-3);
     display: flex;
@@ -1438,7 +1439,7 @@ cursor: pointer;
             visibility: visible;
             margin-top: 0;    
         }
-           
+        
         .carrusel{
             margin-top: 0;
             max-width: 1200px;

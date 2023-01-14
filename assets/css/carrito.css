@@ -5,8 +5,10 @@
     top: 0;
     right: -100%;
     width: 80%;
+    max-width: 500px;
     height: 100vh;
-    visibility: visible;
+    visibility: hidden;
+    display: none;
     background-color: var(--white-principal);
     z-index: var(--index-3);
     padding: 2rem;
@@ -14,6 +16,9 @@
 }
 .carrito-active{
     right: 0;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
 }
 .carrito-top{
     display: flex;
@@ -24,6 +29,9 @@
 }
 .carrito-cruz{
     font-size: 2.5rem;
+}
+.carrito-cruz:hover{
+    cursor: pointer;
 }
 .carrito-bottom{
     display: none;
@@ -50,4 +58,20 @@
     background-color: rgba(20, 20, 19, 0.908);
     z-index: var(--index-2);
     display: block;
+}
+
+@media only screen and (min-width:768px){
+    .carrito-products p{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .carrito-top-title{
+        font-size: 2.6rem;
+    }
+    .carrito-products p{
+        font-size: 1.9rem;
+        margin-top: 2rem;
+    }
 }
