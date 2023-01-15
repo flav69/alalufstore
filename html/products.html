@@ -178,11 +178,123 @@
                     <option value="5" >Mas nuevos</option>
                     <option value="6">Mas viejos</option>
                 </select>
-            <div class="filter-button">
-                <h4 class="filter-button title">FILTRAR</h4>
-                <i class="fa-solid fa-chevron-right"></i>
+                <div class="filter-button">
+                    <h4 class="filter-button title">FILTRAR</h4>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
             </div>
+        <div class="filter-desplegable ">
+            <div class="filter-desplegable-top">
+                <i class="fa-chevron-left fa-solid filter-back-button"></i>
+                <h4 class="filter-desplegable-top-title">Filtrar por:</h4>
             </div>
+            <div class="filter-desplegable-categories">
+                <h4>Categorias</h4>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>REMERAS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>PANTALONES</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>ZAPAS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>GORRAS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>BOXERS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>MEDIAS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>COMBOS</h4>
+                    </a>
+                </div>
+                <div class="filter-desplegable-categorie">
+                    <a href="">
+                        <h4>ACCESORIOS</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="filter-desplegable-color">
+                <h4 class="filter-desplegable-color-title">Color</h4>
+                <ul class="filter-desplegable-color-list">
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="azul" id="filter-color-blue"><label for="filter-color-blue">Azul</label>
+                    </li>
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="rojo " id="filter-color-red"><label for="filter-color-red">Rojo</label>
+                    </li>
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="beige " id="filter-color-beige"><label for="filter-color-beige">Beige</label>
+                    </li>
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="negro " id="filter-color-black"><label for="filter-color-black">Negro</label>
+                    </li>
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="gris " id="filter-color-gray"><label for="filter-color-gray">Gris</label>
+                    </li>
+                    <li class="filter-desplegable-color-item">
+                        <input type="checkbox" name="" value="blanco " id="filter-color-white"><label for="filter-color-white">Blanco</label>
+                    </li>
+                </ul>
+                <button class="filter-desplegable-button-apply">Aplicar</button>
+            </div>
+            <div class="filter-desplegable-talle">
+                <h4 class="filter-desplegable-talle-title">Talle</h4>
+                <ul class="filter-desplegable-talle-list">
+                    <li class="filter-desplegable-talle-item">
+                        <input type="checkbox" name="" value="xxl" id="filter-color-xxl"><label for="filter-color-xxl">XXL</label>
+                    </li>
+                    <li class="filter-desplegable-talle-item">
+                        <input type="checkbox" name="" value="xl " id="filter-color-xl"><label for="filter-color-xl">XL</label>
+                    </li>
+                    <li class="filter-desplegable-talle-item">    
+                        <input type="checkbox" name="" value="l " id="filter-color-l"><label for="filter-color-l">L</label>
+                    </li>
+                    <li class="filter-desplegable-talle-item">    
+                        <input type="checkbox" name="" value="m " id="filter-color-m"><label for="filter-color-m">M</label>
+                    </li>
+                    <li class="filter-desplegable-talle-item">     
+                        <input type="checkbox" name="" value="s " id="filter-color-s"><label for="filter-color-s">S</label>
+                    </li>
+                    <li class="filter-desplegable-talle-item">     
+                        <input type="checkbox" name="" value="xs " id="filter-color-xs"><label for="filter-color-xs">XS</label>
+                    </li>
+                </ul>
+                <button class="filter-desplegable-button-apply">Aplicar</button>
+            </div>
+            <div class="filter-desplegable-price">
+                <h4 class="filter-desplegable-price-title">Precio</h4>
+                <div class="filter-desplegable-price-cont">
+                    <div class="filter-desplegable-price-desde">
+                        <label for="filter-desplegable-price-desde">Desde</label>
+                        <input type="text" name="" id="filter-desplegable-price-desde">
+                    </div>
+                    <div class="filter-desplegable-price-hasta">
+                        <label for="filter-desplegable-price-hasta">Hasta</label>
+                        <input type="text" name="" id="filter-desplegable-price-hasta">
+                    </div>
+                    <button class="filter-desplegable-price-button">Aplicar</button>
+
+                </div>
+            </div>
+        </div>
         </div>
         <div class="items-container">
             <div class="item">
@@ -477,5 +589,6 @@
     <script src="../assets/js/carrito.js"></script>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/buscador.js"></script>
+    <script src="../assets/js/filter.js"></script>
 </body>
 </html>
