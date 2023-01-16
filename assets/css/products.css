@@ -122,8 +122,9 @@
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
+
 .filter-title{
     color: var(--white-principal);
     font-size: 1.2rem;
@@ -240,10 +241,12 @@
     height: 17px;
 }
 
-.filter-desplegable-button-apply{
-    padding: .3rem .4rem;
-    background-color: rgb(224, 224, 224);
-    color: black;
+.filter-desplegable-price-button ,.filter-desplegable-button-apply{
+    padding: .5rem;
+    background-color: var(--secondary--color);
+    color: var(--white-principal);
+    width: 70px;
+    border-radius: 6px;
     border: none;
     margin-top: 1rem;
 }
@@ -289,9 +292,9 @@
 }
 .items-container h3{
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: 400;
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 .items-container p{
     color: white;
@@ -453,13 +456,20 @@
         justify-content: center;
         gap: 3rem;
     }
+    .filters{
+        padding: var(--padding-section);
+        margin: var(--margin-section);
+    }
     .filter{
         padding: 1rem 1.5rem;
     }
     .filter p{
         font-size: 1.3rem;
     }
-
+    .filter-container{
+        justify-content: flex-start;
+        gap: 5rem;
+    }
     .items-container{
         gap: 4rem;
     }
@@ -487,25 +497,97 @@
 
 
 @media only screen and (min-width: 1024px){
+   
+    .items-section{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        
+    }
+    .filter-desplegable-top{
+        display: none;
+    }
+    .filter-desplegable{
+        position: relative;
+        left: 1rem;
+        visibility: visible;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: transparent;
+        max-width: none;
+    }
+    .filters{
+        align-self: flex-start;
+        gap: 1rem;
+        flex-basis: 200px;
+        flex-grow: 0;
+    }
+    .filter-button{
+        display: none;
+    }
 
+    .filter-desplegable-categories > h4, .filter-desplegable-talle-title, .filter-desplegable-color-title, .filter-desplegable-price-title{
+        color: white;
+        font-size: 2rem;
+        gap: 3rem;
+    }
+    .filter-desplegable-categorie{
+        padding: 1rem;
+        border-radius: 6px;
+    }
+    .filter-desplegable-categorie h4{
+        font-size: 1.2rem;
+    }
+    .filter-desplegable-color-list, .filter-desplegable-talle-list{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .filter-desplegable-color-item, .filter-desplegable-talle-item {
+        gap: 1rem;
+    }
+    .filter-desplegable-color-item label, .filter-desplegable-talle-item label{
+        color: white; 
+        font-size: 1.6rem;
+       }
+    .filter-desplegable-color-item input , .filter-desplegable-talle-item input{
+        width: 25px;
+        height: 20px;   
+    }
+    .filter-desplegable-price-cont{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+    }   
+    .filter-desplegable-price-cont-desde , .filter-desplegable-price-cont-hasta{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .filter-desplegable-price-cont>div>label{
+        color: white;
+    }
 
     
-    .carrusel{
-        margin-top: 6rem;
-        max-width: 1024px;
-    }
+    
     .promo-title{
-        font-size: 4rem;
+        font-size: 3.2rem;
+    }
+    .promociones{
+        gap: 4rem;
     }
     .promo{
-        max-width: 350px;
+        max-width: 300px;
     }
     .promo-text{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: -1.5rem;
     }
     .promo-discount{
-        padding: 2rem 1.5rem;
+        padding: 1.4rem 1.2rem;
     }
     .promo-discount p{
         font-size: 1.5rem;
@@ -516,15 +598,19 @@
     .filter p{
         font-size: 1.5rem;
     }
+    .items-container{
+        gap: 6rem;
+    }
     .item{
-        width: 200px;
+        width: 180px;
     }
     .item-top{
         min-height: 250px;
         min-width: 200px;
     }
-    .item-bottom-title{
-        font-size: 1.5rem;
+    .items-container h3{
+        font-family: sans-serif;
+        text-align: c;
     }
     .item-bottom-price__after{
         font-size: 1.8rem;
@@ -536,9 +622,7 @@
     .item-bottom-cuotas p{
         font-size: 1.5rem;
     }
-    .items-container{
-        padding: 0 4rem;
-    }
+ 
 }
 
 
