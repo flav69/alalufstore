@@ -893,6 +893,25 @@ header{
 }
 
 
+        /* URL */
+
+.url-container{
+    margin: 2rem;
+    padding: 1rem;
+}
+.url-container p{
+    color: white;
+    font-size: 1.1rem;
+}
+.url-container span{
+    color: var(--filter-color);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.url-container a{
+    text-decoration: none;
+    color: white;
+}
 
 
                         /*  FOOTER */
@@ -1150,6 +1169,16 @@ header{
             font-size: 1.5rem;
     }
 
+    .url-container{
+        margin: var(--margin-section);
+        padding: 0 var(--padding-section);
+    }
+    .url-container p{
+        font-size: 1.5rem;
+    }
+    .url-container span{
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width:1024px){
