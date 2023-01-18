@@ -216,9 +216,7 @@ cursor: pointer;
 }
 .items-container h3{
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: 400;
+    font-size: 1.5rem;
 }
 .items-container p{
     color: white;
@@ -460,7 +458,7 @@ cursor: pointer;
             min-width: 200px;
         }
         .item-bottom-title{
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
         .item-bottom-price__after{
             font-size: 1.8rem;

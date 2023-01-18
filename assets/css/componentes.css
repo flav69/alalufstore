@@ -913,7 +913,39 @@ header{
     color: white;
 }
 
+/* ENVIOS */
+.envios-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 2rem;
+    padding: 2rem;
 
+}
+.envio:nth-child(2),.envio:last-child{
+    display: none;
+}
+
+.envio-icon{
+    color: var(--filter-color);
+    font-size: 1.6rem;
+}
+.envio-title{
+    color: var(--filter-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.envio-text{
+    color:white;
+
+}
                         /*  FOOTER */
 .footer{
     padding: 0 var(--padding-section);
@@ -925,15 +957,17 @@ header{
     width: 100%;
     margin-top: var(--margin-section);
 }
+.footer h4{
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--beige--header);
+    width: 100%;
+    margin: 2rem 0 1rem;
+}
 .footer-nav{
     display: inline-block;
     width: 100%;
 }
-.footer-nav h4{
-    margin: 2rem 0 1rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--beige--header);
-}
+
 .footer-nav ul{
     list-style: none;
     display: flex;
@@ -941,7 +975,7 @@ header{
 }
 .footer-nav ul .wrap1{
     width: 50%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 .payments{
@@ -949,15 +983,10 @@ header{
     width: 100%;
     
 }
-.payments h4{
-    width: 100%;
-    margin: 2rem 0 1rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--beige--header);
-}
+
 .payments ul img{
     width: auto;
-    height: 3.0rem;
+    height: 2.7rem;
     box-shadow: 2px 3px 4px 0px #181819;
     margin: 0 6px 6px 0;
 }
@@ -965,12 +994,7 @@ header{
     display: inline-block;
     width: 100%;
 }
-.shipping h4{
-    width: 100%;
-    margin: 2rem 0 1rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--beige--header);
-}
+
 .shipping img{
     width: auto;
     height: 3rem;
@@ -981,12 +1005,7 @@ header{
     display: block;
     width: 100%;
 }
-.contact h4{
-    width: 100%;
-    margin: 2rem 0 1rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--beige--header);
-}
+
 .phone-icon{
     background-image: url(../img/footer-icons/number.png);
     background-repeat: no-repeat;
@@ -1027,12 +1046,7 @@ header{
     display: inline-block;
     width: 100%;
 }
-.social h4{
-    width: 100%;
-    margin: 2rem 0 1rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid var(--beige--header);
-}
+
 .ig-logo{
     display: inline-block;
     background-image: url(../img/footer-icons/ig-icon.png);
@@ -1202,6 +1216,22 @@ header{
     }
     .header-mid-logo .logo{
         width: 12rem;
+    }
+
+    .envios-container{
+        margin: 6rem 0;
+    }
+    .envio-title{
+        font-size: 1.6rem;
+    }
+    .envio-text{
+        font-size: 1.3rem;
+    }
+    .envio:nth-child(2),.envio:last-child{
+        display: flex;
+    }
+    .envio:not(:last-child){
+        border-right: 1px solid var(--filter-color);
     }
 }
 
