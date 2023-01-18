@@ -11,7 +11,11 @@ function toggleMenu(){
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = 'auto';
-        filterPage.style.position = "fixed"; //para que ocupe toda la pantalla
+        if (screen.width > 1024){
+            filterPage.style.position = "relative"; //para que ocupe toda la pantalla
+        }else{
+            filterPage.style.position = "fixed"; //para que ocupe toda la pantalla
+        }
     }
 }
 

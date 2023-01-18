@@ -523,18 +523,25 @@
         gap: 1rem;
         flex-basis: 200px;
         flex-grow: 0;
+        margin: 0;
+        width: 15%;
+
+
     }
+    
     .filter-button{
         display: none;
     }
-
+    .filter-desplegable-categories{
+        flex-direction: column;
+    }
     .filter-desplegable-categories > h4, .filter-desplegable-talle-title, .filter-desplegable-color-title, .filter-desplegable-price-title{
         color: white;
         font-size: 2rem;
         gap: 3rem;
     }
     .filter-desplegable-categorie{
-        padding: 1rem;
+        padding: .7rem;
         border-radius: 6px;
     }
     .filter-desplegable-categorie h4{
