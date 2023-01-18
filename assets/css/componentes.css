@@ -810,7 +810,7 @@ header{
     width: 30%;
 }
 .header-mid-menu .header-mid-menu-cont{
-    background-image: url(../img/menu-icon.png);
+    background-image: url(../img/icons/menu-icon.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -828,7 +828,7 @@ header{
     width: 40%;
 }
 .header-mid-logo .logo{
-    background-image: url(../img/main-logo.png);
+    background-image: url(../img/icons/main-logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1179,6 +1179,13 @@ header{
     .url-container span{
         font-size: 1.5rem;
     }
+    .footer h4{
+        font-size: 1.5rem;
+    }
+    .footer p , .footer span{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media only screen and (min-width:1024px){
