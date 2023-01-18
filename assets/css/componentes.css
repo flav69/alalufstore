@@ -1097,6 +1097,7 @@ header{
     }
     header{
         padding: 2rem 0;
+        margin-top: 1rem;
     }
     .header-top-sign{
         font-size: 1.1rem;
@@ -1170,10 +1171,10 @@ header{
 
 @media only screen and (min-width: 1440px){
     .header-mid-menu .header-mid-menu-cont{
-        height: 10rem;
+        height: 2.5rem;
     }
     .header-mid-menu span{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .menu-container-cruz i{
         font-size: 4rem;
@@ -1182,10 +1183,10 @@ header{
         padding: 3rem;
     }
     .menu-item a p{
-        font-size: 2.3rem;
+        font-size: 1.4rem;
     }   
     .menu-container-logintext p{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .fa-grip-lines-vertical{
         font-size: 5rem;
@@ -1194,6 +1195,7 @@ header{
     .menu-photo i{
         font-size: 5rem;
     }
+    
 }
 
 @media only screen and (min-width:2560px){
@@ -1252,8 +1254,8 @@ header{
         margin-top: 8rem;
     }
    .footer-nav h4, .payments h4, .shipping h4, .contact h4, .social h4{
-    font-size: 6rem;
-    border-bottom-width: 4px;
+        font-size: 4rem;
+        border-bottom-width: 4px;
    }
    .footer-nav ul .wrap1, .contact li span{
     font-size: 4rem;

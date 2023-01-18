@@ -537,15 +537,17 @@
     }
     .filter-desplegable-categories > h4, .filter-desplegable-talle-title, .filter-desplegable-color-title, .filter-desplegable-price-title{
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         gap: 3rem;
     }
     .filter-desplegable-categorie{
         padding: .7rem;
         border-radius: 6px;
+        flex-wrap: wrap;
+        max-width: 100px;
     }
     .filter-desplegable-categorie h4{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .filter-desplegable-color-list, .filter-desplegable-talle-list{
         flex-direction: column;
@@ -556,11 +558,11 @@
     }
     .filter-desplegable-color-item label, .filter-desplegable-talle-item label{
         color: white; 
-        font-size: 1.6rem;
+        font-size: 1.2rem;
        }
     .filter-desplegable-color-item input , .filter-desplegable-talle-item input{
-        width: 25px;
-        height: 20px;   
+        width: 20px;
+        height: 15px;   
     }
     .filter-desplegable-price-cont{
         width: 100%;
@@ -587,7 +589,7 @@
         gap: 4rem;
     }
     .promo{
-        max-width: 300px;
+        max-width: 250px;
     }
     .promo-text{
         font-size: 1.3rem;
@@ -627,7 +629,7 @@
         font-size: 1.3rem;
     }
     .item-bottom-cuotas p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
  
 }
