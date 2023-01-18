@@ -4,9 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/componentes.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <title>Alaluf Store - Talle de Productos - </title>
 </head>
 <body>
-    
+     <!-- Background Animation -->
+     <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title"></div>
+    </section>
+
+        <!-- Menu Desplegable -->
+    <div class="menu ">
+        <div class="menu-container-cruz">
+            <i class="uil uil-times"></i>
+        </div>
+        <div class="menu-lista">
+            <li class="menu-item">
+                <a href="index.html" class="menu-item-link">
+                    <p class="menu-item-text">Inicio</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Productos</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Tabla de talles</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Cambio y Devolución</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="" class="menu-item-link">
+                    <p class="menu-item-text">Ayuda y Contactos</p>
+                </a>
+            </li>
+        </div>
+        <div class="menu-container-login">
+            <div class="menu-photo">
+                <i class="uil uil-user-circle"></i>
+            </div>
+            <div class="menu-container-logintext">
+                <p class="menu-new-account">Crear nueva cuenta</p>
+                <i class="fa-solid fa-grip-lines-vertical"></i>
+                <p class="menu-login">Iniciar Sesión</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Carrito -->
+        
+
+    <div class="carrito">
+        <div class="carrito-top">
+            <h2 class="carrito-top-title">Carrito de Compras</h2>
+            <i class="uil uil-times carrito-cruz"></i>
+        </div>
+        <div class="carrito-bottom">
+            <div class="carrito-bottom-title">Productos</div>
+            <div class="carrito-bottom-title">Subtotal</div>
+        </div>
+        <div class="carrito-products">
+            <p class="carrito-empty">EL CARRITO DE COMPRAS ESTÁ VACIO.</p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="bg-overlay"></div>
+        <div class="carrito-overlay"></div>
+        <div class="header-top">
+            <marquee behavior="scroll" direction="left" scrollamount="6" class="header-top-sign" >
+                <span>ENVÍOS INTERNACIONALES DISPONIBLES</span>
+                <span>[ENVÍO GRATIS] PARA TODA LA ARGENTINA PARA COMPRAS SUPERIORES A $21K</span>
+                <span>6 CUOTAS SIN INTERÉS CON VISA, MASTERCARD Y AMEX</span>
+            </marquee>
+        </div>
+        <div class="header-mid">
+            <div class="header-mid-menu">
+                <div class="header-mid-menu-cont">
+                </div>
+                <span>MENÚ</span>
+            </div>
+            <div class="header-mid-logo">
+                <a href="./index.html"><div class="logo"></div></a>
+            </div>
+            <div class="header-mid-container">
+                    <div class="header-mid-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                <div class="header-mid-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="buscador">
+        <label for="buscador-input"></label>
+        <input type="text" name="" id="buscador-input"   class="buscador-input">
+        <input type="button" value=">" class="buscador-button">
+    </div>
+
+        <!-- Footer -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li class="wrap1"><p>Inicio</p></li>
+                    <li class="wrap1"><p>Hombre</p></li>
+                    <li class="wrap1"><p>Quiénes Somos</p> </li>
+                    <li class="wrap1"><p>Mujer</p></li>
+                    <li class="wrap1"><p>Tabla de talles</p> </li>
+                    <li class="wrap1"><p>Quedate en casa</p> </li>
+                    <li class="wrap1"><p>Cómo comprar</p> </li>
+                    <li class="wrap1"><p>Dónde estamos</p> </li>
+                    <li class="wrap1"><p>Contacto</p></li>
+                    <li class="wrap1"><p>Ventas por mayor</p> </li>
+                </ul>
+            </div>
+            <div class="payments">
+                <h4>MEDIOS DE PAGO</h4>
+                <ul>
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" alt="">
+                </ul>
+            </div>
+            <div class="shipping">
+                <h4>FORMAS DE ENVÍO</h4>
+                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" alt="">
+            </div>
+            <div class="contact">
+                <h4>CONTACTANOS</h4>
+                <ul>
+                    <li>
+                        <div class="phone-icon"></div>
+                        <span>3524 777-7777</span>
+                    </li>
+                    <li>
+                        <div class="arroba-icon"></div>
+                        <span>example@email.com</span>
+                    </li>
+                    <li>
+                        <div class="place-icon"></div>
+                        <span>Route 69</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4>REDES SOCIALES</h4>
+                <a href="instagram.com" class="ig-logo">
+                </a>
+                <a href="facebook.com" class="fb-logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/buscador.js"></script>
+    <script src="../assets/js/filter.js"></script>
 </body>
 </html>
