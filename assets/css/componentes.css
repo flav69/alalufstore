@@ -1188,6 +1188,12 @@ header{
     .menu-container-logintext p{
         font-size: 1.2rem;
     }
+    .carrito-top h2{
+        font-size: 1.9rem;
+    }
+    .carrito-products p{
+        font-size: 1.4rem;
+    }
     .fa-grip-lines-vertical{
         font-size: 5rem;
         text-align: center;
