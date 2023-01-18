@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../assets/css/componentes.css">
-    <link rel="stylesheet" href="../assets/css/talles.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Alaluf Store - Talle de Productos - </title>
+    <title>Alaluf Store - Contact</title>
 </head>
 <body>
-    <!-- Background Animation -->
-     <section class="wrapper">
+    
+      <!-- Background Animation -->
+      <section class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -50,7 +51,7 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="./contact.html" class="menu-item-link">
+                <a href="" class="menu-item-link">
                     <p class="menu-item-text">Ayuda y Contactos</p>
                 </a>
             </li>
@@ -113,20 +114,59 @@
         </div>
     </header>
 
-    <div class="buscador">
-        <label for="buscador-input"></label>
-        <input type="text" name="" id="buscador-input"   class="buscador-input">
-        <input type="button" value=">" class="buscador-button">
-    </div>
+    <div class="buscador"></div>
 
     <!-- URL -->
      <div class="url-container">
-        <a href="./index.html"><p>Inicio</a> / <span class="url-change">Talles</span></p>
+        <a href="./index.html"><p>Inicio</a> / <span class="url-change">Contacto</span></p>
     </div>
-    <!-- Talles Section  -->
-    <div class="talles-container">
-        <img src="../assets/img/talles.jpg" alt="Tabla de Talles" class="talles-img">
+
+ 
+    <!-- Contact -->
+    <div class="contact-container">
+        <div class="datos">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-whatsapp "></i>
+                    <p> +54 3525 123456</p>
+                </li>
+                <li>
+                    <i class="fa-envelope fa-solid"></i>
+                    <p>hola-alalufstore@gmail.com</p>
+                </li>
+                <li>
+                    <i class="fa-location-dot fa-solid"></i>
+                    <p>9 de julio 998, Nueva Cba, Cordoba</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>Siguenos en Instagram</p>
+                </li>
+            </ul>
+        </div>
+        <form action="" class="contact-form">
+            <div class="section-form">
+                <label for="contact-name">Nombre</label>
+                <input type="text" id="contact-name">
+            </div>
+            <div class="section-form">
+                <label for="contact-email">Email</label>
+                <input type="email"  id="contact-email" required>
+            </div>
+            <div class="section-form">
+                <label for="contact-phone">Telefono (opcional)</label>
+                <input type="text"  id="contact-phone">
+            </div>
+            <div class="section-form">
+                <label for="contact-msg">Mensaje</label>
+                <textarea name="contact-textarea" id="contact-msg" class="contact-msg" rows="10"></textarea>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
     </div>
+
+
+    <!-- Envios -->
     <div class="envios-container">
         <div class="envio">
             <i class="fa-truck fa-solid envio-icon"></i>
@@ -147,6 +187,7 @@
     </div>
 
     <!-- Footer -->
+
     <footer>
         <div class="footer">
             <div class="footer-nav">
@@ -211,10 +252,10 @@
             </div>
         </div>
     </footer>
-
     <script src="../assets/js/carrito.js"></script>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/buscador.js"></script>
-    <script src="../assets/js/filter.js"></script>
+
+
 </body>
 </html>
