@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaluf Store - Login</title>
 
     <link rel="stylesheet" href="../assets/css/componentes.css">
-    <link rel="stylesheet" href="../assets/css/devolucion.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <title>Alaluf Store - Cambio y Devolucion</title>
 </head>
 <body>
-
+    
       <!-- Background Animation -->
-    <section class="wrapper">
+      <section class="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
@@ -51,7 +50,7 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a href="./contact.html" class="menu-item-link">
+                <a href="" class="menu-item-link">
                     <p class="menu-item-text">Ayuda y Contactos</p>
                 </a>
             </li>
@@ -114,62 +113,48 @@
         </div>
     </header>
 
-    <div class="buscador">
-        <label for="buscador-input"></label>
-        <input type="text" name="" id="buscador-input"   class="buscador-input">
-        <input type="button" value=">" class="buscador-button">
-    </div>
+    <div class="buscador"></div>
 
     <!-- URL -->
      <div class="url-container">
-        <a href="./index.html"><p>Inicio</a> / <span class="url-change">Cambio y Devolucion</span></p>
+        <a href="./index.html"><p>Inicio</a> / <span class="url-change">Crear Cuenta</span></p>
     </div>
 
-    <!-- Cambio y Devolucion -->
-    <div class="cambio-container">
-        <div class="cambio">
-            <h3 class="cambio-title">Politica de Envios: </h3>
-            <p class="cambio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quibusdam doloremque, asperiores cum voluptas, voluptate iusto quae optio autem
-                 deserunt modi illum dolorum? Quasi, facilis temporibus quas eos veniam in obcaecati.</p>
+ <!-- Login -->
+ <p class="text-convincent"> Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
+ <div class="login">
+    <form action="" class="login-form">
+        <div>
+            <label for="">NOMBRE</label>
+            <input type="text">
         </div>
-        <div class="cambio">
-            <h3 class="cambio-title">Politica de Devolucion: </h3>
-            <p class="cambio-text">Nuestro objetivo principal es que estés satisfecho con tu compra. Por eso te ofrecemos 10 días para realizar el cambio o devolución de tus productos ante las siguientes situaciones:</p>
-            <ul>
-				<li>
-					<p> A - No me gustó: 
-					Si el producto no cubre tus expectativas, podés cambiarlo por un cupón de compra por el mismo valor
-					 o bien solicitar la devolución de tu dinero. En este caso, deduciremos el gasto de envío.</p>
-				</li>
-				<li>
-					<p>B - Producto defectuoso:
-						Si recibís un producto con alguna falla o defecto podés optar por el reemplazo o bien la devolución, ya sea por cupón de compra o la devolución del dinero.</p>
-				</li>
-				<li>
-					<p>C- Me queda chico/grande: 
-						Deberás enviar el producto a nuestras oficinas y recibirás el cambio por el mismo producto en el talle que solicites. Consultar costo de logística según localidad.</p>
-				</li>
-			</ul>
+        <div>
+            <label for="">EMAIL</label>
+            <input type="email">
         </div>
-        <div class="cambio">
-            <h3 class="cambio-title">Politica de Cambio de producto: </h3>
-            <p class="cambio-text">El cambio está sujeto a disponibilidad de stock a partir del reingreso de la mercadería y luego de superado el control de calidad.
-				En caso de cambio por cupón o reintegro, se reconocerán los costos de los artículos abonados al momento de la compra.
-				</p>
-				<ul>
-					<li>
-						<p>1- Enviá un mail a hola@quierocalma.com.ar informando número de orden, motivo del cambio, talle y color del producto pretendido.
- 						</p>
-					</li>
-					<li>
-						<p>
-							2- Recibirás una respuesta confirmando si está permitido el cambio con las indicaciones para el mismo.</p>
-					</li>
-				</ul>
+        <div>
+            <label for="">TELEFONO</label>
+            <input type="tel">
         </div>
-        
+        <div>
+            <label for="">CONTRASEÑA</label>
+            <input type="password" >
+        </div>
+        <div>
+            <label for="">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" >
+        </div>
+        <a href="./changePassword.html">
+            <p>Olvidaste tu contraseña?</p>
+        </a>
+        <button type="submit">INICIAR SESION</button>
+    </form>
+    <div class="login-new-account">
+        <p>Ya tenes una cuenta? <a href="./login.html">Inicia Sesion</a></p>
     </div>
+ </div>
+
+    <!-- Envios -->
     <div class="envios-container">
         <div class="envio">
             <i class="fa-truck fa-solid envio-icon"></i>
@@ -258,6 +243,7 @@
     <script src="../assets/js/carrito.js"></script>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/buscador.js"></script>
+
 
 </body>
 </html>

@@ -23,6 +23,10 @@ html{
     min-height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
+a{
+    text-decoration: none;
+    color: var(--black-principal);
+}
 .body{
     margin: 0;
 }
@@ -962,6 +966,10 @@ header{
     border-bottom: 1px solid var(--beige--header);
     width: 100%;
     margin: 2rem 0 1rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #090a0f;
 }
 .footer-nav{
     display: inline-block;

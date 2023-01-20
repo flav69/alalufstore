@@ -551,7 +551,7 @@
     }
     .filter-desplegable-color-list, .filter-desplegable-talle-list{
         flex-direction: column;
-        gap: 3rem;
+        gap: 1.5rem;
     }
     .filter-desplegable-color-item, .filter-desplegable-talle-item {
         gap: 1rem;
