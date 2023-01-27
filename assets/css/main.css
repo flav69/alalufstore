@@ -320,8 +320,9 @@ cursor: pointer;
 .items-container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
     margin: 0 1rem;
     height: auto;
 }
@@ -343,15 +344,19 @@ cursor: pointer;
 .item{
     width: 140px;
     transition: all .5s ease;
+    border-bottom: .5px solid var(--tercer--color);
+    margin: 0 auto;
+
 }
 .item:hover .item-bottom-title{
     text-decoration: underline;
     cursor: pointer;
 }
 .item-top{
-    background-color: #181819;
+    background-image: url(../img/promo-img/tshirt.jpg);
     position: relative;
     min-height: 150px;
+    width: 100%;
 
 
 }
@@ -363,35 +368,36 @@ cursor: pointer;
     border-radius: 2px;
 
 }
-.item-top-img-container{
+.item-top{
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
-.item-top-img-container.uno{
+.item-top.uno{
     background-image: url(../img/promo-img/tshirt.jpg);
 }
-.item-top-img-container.dos{
+.item-top.dos{
     background-image: url(../img/promo-img/clothes.jpeg);
 }
-.item-top-img-container.tres{
+.item-top.tres{
     background-image: url(../img/promo-img/shoes.jpeg);
 }
-.item-top-img-container.cuatro{
+.item-top.cuatro{
     background-image: url(../img/promo-img/cap.jpg);
 }
-.item-top-img-container.cinco{
+.item-top.cinco{
     background-image: url(../img/promo-img/shorts.jpeg);
 }
-.item-top-img-container.seis{
+.item-top.seis{
     background-image: url(../img/promo-img/tshirt.jpg);
 }
-.item-top-img-container.siete{
+.item-top.siete{
     background-image: url(../img/promo-img/cap.jpg);
 }
-.item-top-img-container.ocho{
+.item-top.ocho{
     background-image: url(../img/promo-img/shoes.jpeg);
 }
 .item-bottom{
@@ -422,19 +428,20 @@ cursor: pointer;
     font-weight: 700;
 }
 .item-bottom-cuotas{
-    display: flex;
+    display: none;
     justify-content: center;
-    border-bottom: .5px solid var(--tercer--color);
+    transition: all .5s ease;
+}
+.item:hover .item-bottom-cuotas{
+    display: flex;
+    transition: all .5s ease;
 }
 .item-bottom-cuotas p{
     padding: 1rem 0;
     width: 90%;
     text-align: center;
 }
-.item-bottom-cuotas span{
-    color: #6B6A6A;
-    font-weight: 900;
-}
+
 .items-more-products{
     display: flex;
     justify-content: center;
@@ -501,8 +508,8 @@ cursor: pointer;
             justify-content: flex-start;
             gap: 5rem;
         }
-        .items-container{
-            gap: 4rem;
+        .items-section{
+            margin-top: 8rem;
         }
         .item-bottom-title{
             font-size: 1.4rem;
@@ -537,13 +544,6 @@ cursor: pointer;
         .colecciones-title{
             font-size: 2rem;
             padding-bottom: 2rem;
-        }
-        .items-section{
-            position: relative;
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-            
         }
         .filter-desplegable-top{
             display: none;
@@ -624,8 +624,20 @@ cursor: pointer;
         .filter p{
             font-size: 1.5rem;
         }
+        .items-section{
+            display: flex;
+        }
+        .filters{
+            justify-content: flex-start;
+            flex-basis: 20%;
+
+        }
         .items-container{
+            display: flex;
             gap: 6rem;
+            justify-self: flex-end;
+            align-content: flex-start;
+            
         }
         .item{
             width: 180px;
