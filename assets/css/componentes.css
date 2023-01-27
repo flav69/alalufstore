@@ -1,8 +1,8 @@
 :root {
     --black-principal: rgb(15, 15, 15);
     --white-principal: white;
-    --beige--header: rgb(110, 102, 102);
     --secondary--color: #3f2028;
+    --tercer--color: #e0907c;
     --margin-section: 3em;
     --padding-section: 2em;
     --filter-color:#ECECEC;
@@ -10,7 +10,7 @@
     --index-2: 10;
     --index-3: 100;
     --index-4: 1000;
-  }
+}
 *{
     box-sizing: border-box;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -21,7 +21,7 @@ html{
     font-size: 62.5%;
     /* 1rem = 10px */
     min-height: 100%;
-    background: radial-gradient(ellipse at bottom, #dbdbda 0%, #fdfdfd 100%);
+    background: radial-gradient(ellipse at bottom, #fbfbfb 0%, #fdfdfd 100%);
 }
 a{
     text-decoration: none;
@@ -30,30 +30,7 @@ a{
 .body{
     margin: 0;
 }
-#title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #fff;
-    text-align: center;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 50px;
-    letter-spacing: 10px;
-    margin-top: -60px;
-    padding-left: 10px;
-}
-#title span{
-    background: -webkit-linear-gradient(white, #38495a);
-    -webkit-text-fill-color: transparent;
-}
-.wrapper{
-    margin: 0;
-    padding: 0;
-    height: 0;
-    width: 0;
-}
+
 .disabled{
     display: none;
 }
@@ -350,17 +327,17 @@ header{
     padding: 1rem;
 }
 .url-container p{
-    color: white;
+    color: var(--black-principal);
     font-size: 1.1rem;
 }
 .url-container span{
-    color: var(--filter-color);
+    color: var(--black-principal);
     font-weight: 900;
     font-size: 1.2rem;
 }
 .url-container a{
     text-decoration: none;
-    color: white;
+    color: var(--black-principal);
 }
 
 /* ENVIOS */
@@ -384,16 +361,18 @@ header{
 }
 
 .envio-icon{
-    color: var(--filter-color);
+    color: var(--black-principal);
     font-size: 1.6rem;
 }
 .envio-title{
-    color: var(--filter-color);
+    color: var(--black-principal);
+
     font-size: 1.4rem;
     text-transform: uppercase;
 }
 .envio-text{
-    color:white;
+    color: var(--black-principal);
+
 
 }
                         /*  FOOTER */
@@ -409,7 +388,7 @@ header{
 }
 .footer h4{
     font-size: 1.4rem;
-    border-bottom: 1px solid var(--beige--header);
+    border-bottom: 1px solid var(--black-principal);
     width: 100%;
     margin: 2rem 0 1rem;
 }
@@ -685,7 +664,7 @@ header{
         display: flex;
     }
     .envio:not(:last-child){
-        border-right: 1px solid var(--filter-color);
+        border-right: 1px solid var(--black-principal);
     }
 }
 

@@ -1,13 +1,16 @@
 :root {
     --black-principal: rgb(15, 15, 15);
     --white-principal: white;
-    --beige--header: rgb(110, 102, 102);
     --secondary--color: #3f2028;
+    --tercer--color: #e0907c;
     --margin-section: 3em;
     --padding-section: 2em;
     --filter-color:#ECECEC;
-  }
-
+    --index-base: 1;
+    --index-2: 10;
+    --index-3: 100;
+    --index-4: 1000;
+}
 .contactos-container{
     display: flex;
     justify-content: center;
@@ -34,7 +37,7 @@
     font-size: 1.1rem;
 }
 .datos li i{
-    color: var(--secondary--color);
+    color: var(--tercer--color);
     font-size: 1.8rem;
 }
 
@@ -55,7 +58,7 @@
     gap: .3rem;
 }
 .section-form label{
-    color: var(--filter-color);
+    color: var(--black-principal);
     text-transform: uppercase;
 }
 

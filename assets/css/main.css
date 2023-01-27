@@ -86,16 +86,24 @@ cursor: pointer;
 
 
                     /* Colecciones Section*/
-.colecciones{
+.colecciones-wrapper{
+    margin: var(--margin-section) 0 ;
+    padding: var(--padding-section) 0;
+    width: 100%;
+}
+.colecciones-title{
+    text-align: center;
+}
+.colecciones-minwrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: var(--margin-section) 0 ;
-    padding: var(--padding-section) 0;
 }
 .coleccion-wrapper{
+    max-width: 350px;
     width: 90%;
     margin-top: 2rem;
     display: flex;
@@ -152,8 +160,10 @@ cursor: pointer;
 }
 
 .filter-title{
-    color: var(--white-principal);
-    font-size: 1.2rem;
+    color: #353435;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-family: sans-serif;
 }
 .filter-container{
     display: flex;
@@ -224,7 +234,7 @@ cursor: pointer;
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
-    border-bottom: 1px solid var(--filter-color);
+    border-bottom: 1px solid var(--secondary--color);
     padding-bottom: 2rem;
 }
 .filter-desplegable-categories > h4, .filter-desplegable-talle-title, .filter-desplegable-color-title, .filter-desplegable-price-title{
@@ -232,7 +242,6 @@ cursor: pointer;
     font-size: 1.5rem;
 }
 .filter-desplegable-categorie{
-    background-color: var(--filter-color);
     padding: 0.5rem;
  
 
@@ -247,7 +256,7 @@ cursor: pointer;
 .filter-desplegable-color, .filter-desplegable-talle ,.filter-desplegable-price{
     padding: 1rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--filter-color);
+    border-bottom: 1px solid var(--secondary--color);
 }
 .filter-desplegable-color-list, .filter-desplegable-talle-list{
     display: flex;
@@ -317,13 +326,13 @@ cursor: pointer;
     height: auto;
 }
 .items-container h3{
-    color: white;
+    color: var(--black-principal);
     font-family: "Open Sans";
     font-size: 1.2rem;
     font-weight: 100;
 }
 .items-container p{
-    color: white;
+    color: black;
 }
 .items-container .item{
     display: flex;
@@ -343,13 +352,16 @@ cursor: pointer;
     background-color: #181819;
     position: relative;
     min-height: 150px;
+
+
 }
 .item-top-discount{
     position: absolute;
     color: white;
-    background-color: var(--secondary--color);
+    background-color: var(--tercer--color);
     padding: 0.3rem;
     border-radius: 2px;
+
 }
 .item-top-img-container{
     width: 100%;
@@ -412,9 +424,7 @@ cursor: pointer;
 .item-bottom-cuotas{
     display: flex;
     justify-content: center;
-    outline: 2px solid var(--filter-color);
-    border-radius: 5px 55px;
-    box-shadow: #090a0f 10px 10px;
+    border-bottom: .5px solid var(--tercer--color);
 }
 .item-bottom-cuotas p{
     padding: 1rem 0;
@@ -435,7 +445,7 @@ cursor: pointer;
     min-width: 250px;
     padding: 1rem 1rem;
     margin: 2rem 3.5rem;
-    background-color: rgba(150, 100, 100, 0.3);
+    background-color: rgba(150, 100, 100, 1);
     border-radius: 5px;
     transition: all .5s ease;
 
@@ -468,8 +478,8 @@ cursor: pointer;
         
        
         .carrusel{
-            margin-top: 0;
-            max-width: 1200px;
+            margin-top: var(--margin-section);
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -518,7 +528,16 @@ cursor: pointer;
 
 
     @media only screen and (min-width: 1024px){
-
+        .colecciones{
+            display: flex;
+        }
+        .coleccion-wrapper{
+            width: 350px;
+        }
+        .colecciones-title{
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
         .items-section{
             position: relative;
             display: flex;
@@ -546,10 +565,7 @@ cursor: pointer;
             flex-grow: 0;
             margin: 0;
             width: 15%;
-    
-    
         }
-        
         .filter-button{
             display: none;
         }
@@ -557,8 +573,10 @@ cursor: pointer;
             flex-direction: column;
         }
         .filter-desplegable-categories > h4, .filter-desplegable-talle-title, .filter-desplegable-color-title, .filter-desplegable-price-title{
-            color: white;
+            color: black;
             font-size: 1.5rem;
+            font-weight: 900;
+            font-family: sans-serif;
             gap: 3rem;
         }
         .filter-desplegable-categorie{
@@ -578,7 +596,7 @@ cursor: pointer;
             gap: 1rem;
         }
         .filter-desplegable-color-item label, .filter-desplegable-talle-item label{
-            color: white; 
+            color: black; 
             font-size: 1.2rem;
            }
         .filter-desplegable-color-item input , .filter-desplegable-talle-item input{
@@ -598,26 +616,7 @@ cursor: pointer;
             gap: 1rem;
         }
         .filter-desplegable-price-cont>div>label{
-            color: white;
-        }
-        .promo-title{
-            font-size: 3.2rem;
-        }
-        .promociones{
-            gap: 4rem;
-        }
-        .promo{
-            max-width: 250px;
-        }
-        .promo-text{
-            font-size: 1.3rem;
-            margin-top: -1.5rem;
-        }
-        .promo-discount{
-            padding: 1.4rem 1.2rem;
-        }
-        .promo-discount p{
-            font-size: 1.5rem;
+            color: black;
         }
         .categories-filter{
             margin-top: 6rem;
@@ -632,7 +631,7 @@ cursor: pointer;
             width: 180px;
         }
         .item-top{
-            min-height: 250px;
+            min-height: 220px;
             min-width: 200px;
         }
         .items-container h3{
@@ -655,29 +654,6 @@ cursor: pointer;
 
     
     @media only screen and (min-width: 2560px){
-        .promociones{
-            gap: 10rem;
-            margin: 12rem 0;
-            padding: 0 4rem;
-        }
-        .promo{
-            min-width: 400px;
-            min-height: 550px;
-            grid-area: 4rem;
-        }
-        .promo-title{
-            font-size: 6rem;
-        }
-        .promo-text{
-            font-size: 3rem;
-        }
-        .promo-discount{
-            padding: 4rem;
-        }
-        .promo-discount p{
-            font-size: 3rem;
-        }
-    
         .categories-filter{
             gap: 9rem;
             margin-bottom: 4rem;
