@@ -1,6 +1,6 @@
-cruzCarrito = document.querySelector('.carrito-cruz');
-carrito = document.querySelector('.carrito');
-carritoIcon = document.querySelector('.header-mid-cart');
+const cruzCarrito = document.querySelector('.carrito-cruz');
+const carrito = document.querySelector('.carrito');
+const carritoIcon = document.querySelector('.header-mid-cart');
 const carrito_bg_overlay = document.querySelector('.carrito-overlay');
 
 

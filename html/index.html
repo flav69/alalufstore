@@ -15,47 +15,36 @@
 
     <link rel="stylesheet" href="../assets/css/main.css">                                           
     <link rel="stylesheet" href="../assets/css/componentes.css">    
-    <link rel="stylesheet" href="../assets/css/phone.css">
 </head>
 <body>
-    <!-- Background Animation -->
-    <section class="wrapper">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="title"></div>
-    </section>
-    <!-- Background Animation End -->
-    <!-- Header -->
-
-        <!-- Menu Desplegable -->
+    <!-- Menu Desplegable -->
     <div class="menu ">
         <div class="menu-container-cruz">
             <i class="uil uil-times"></i>
         </div>
         <div class="menu-lista">
             <li class="menu-item">
-                <a href="index.html" class="menu-item-link">
+                <a href="./index.html" class="menu-item-link">
                     <p class="menu-item-text">Inicio</p>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="products.html" class="menu-item-link">
+                <a href="./index.html" class="menu-item-link">
                     <p class="menu-item-text">Productos</p>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-item-link">
+                <a href="./talles.html" class="menu-item-link">
                     <p class="menu-item-text">Tabla de talles</p>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-item-link">
+                <a href="./devolucion.html" class="menu-item-link">
                     <p class="menu-item-text">Cambio y Devolución</p>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="" class="menu-item-link">
+                <a href="./contact.html" class="menu-item-link">
                     <p class="menu-item-text">Ayuda y Contactos</p>
                 </a>
             </li>
@@ -65,16 +54,14 @@
                 <i class="uil uil-user-circle"></i>
             </div>
             <div class="menu-container-logintext">
-                <p class="menu-new-account">Crear nueva cuenta</p>
+                <a href="./signup.html"><p class="menu-new-account">Crear nueva cuenta</p></a>
                 <i class="fa-solid fa-grip-lines-vertical"></i>
-                <p class="menu-login">Iniciar Sesión</p>
+                <a href="./login.html"><p class="menu-login">Iniciar Sesión</p></a>
             </div>
         </div>
     </div>
 
-        <!-- Carrito -->
-        
-    
+    <!-- Carrito --> 
     <div class="carrito">
         <div class="carrito-top">
             <h2 class="carrito-top-title">Carrito de Compras</h2>
@@ -88,9 +75,9 @@
             <p class="carrito-empty">EL CARRITO DE COMPRAS ESTÁ VACIO.</p>
         </div>
     </div>
+    
     <!-- HEADER -->
-
-    <header>
+    <header id="#inicio">
         <div class="bg-overlay"></div>
         <div class="carrito-overlay"></div>
         <div class="header-top">
@@ -107,7 +94,7 @@
                 <span>MENÚ</span>
             </div>
             <div class="header-mid-logo">
-                <div class="logo"></div>
+                <a href="index.html"><div class="logo"></div></a>
             </div>
             <div class="header-mid-container">
                     <div class="header-mid-search">
@@ -120,16 +107,14 @@
         </div>
     </header>
 
-    <!-- Header End -->
-    <!-- Main -->
-
+    <!-- Buscador -->
     <div class="buscador">
         <label for="buscador-input"></label>
         <input type="text" name="" id="buscador-input"   class="buscador-input">
         <input type="button" value=">" class="buscador-button">
     </div>
+
     <!-- MAIN -->
-    
     <main>
         <!-- Carrusel -->
         <div class="carrusel">
@@ -176,78 +161,156 @@
                 
             </div>
         </div>
-        <!-- Carrusel End-->
-
-        <!-- Shop Section -->
-
-        <section class="promociones">
-            <div class="promo">
-                <h3 class="promo-title">REMERAS</h3>
-                <p class="promo-text">100% algodón</p>
-                <div class="promo-discount">
-                    <p class="promo-discount-title">VER</p>
+        <!-- Colecciones Section -->
+        <section class="colecciones-wrapper">
+            <h1 class="colecciones-title">Mis Colecciones</h1>
+            <div class="colecciones-minwrapper">
+                <div class="coleccion-wrapper">
+                    <h2 class="coleccion-title">Summer 2021</h2>
+                    <div class="coleccion">
+                    </div>
+                </div>
+                <div class="coleccion-wrapper">
+                    <h2 class="coleccion-title">Winter 2021</h2>
+                    <div class="coleccion">
+                    </div>
                 </div>
             </div>
-            <div class="promo">
-                <h3 class="promo-title">SHORTS</h3>
-                <p class="promo-text">10% OFF</p>
-                <div class="promo-discount">
-                    <p class="promo-discount-title">VER</p>
-                </div>
-            </div>
-            <div class="promo">
-                <h3 class="promo-title">COMBOS</h3>
-                <p class="promo-text">REMERA + SHORT + ZAPAS</p>
-                <div class="promo-discount">
-                    <p class="promo-discount-title">VER</p>
-                </div>
-            </div>
-            <div class="promo">
-                <h3 class="promo-title">ZAPAS</h3>
-                <p class="promo-text"></p>
-                <div class="promo-discount">
-                    <p class="promo-discount-title">VER</p>
-                </div>
-            </div>
-            <div class="promo">
-                <h3 class="promo-title">GORRAS</h3>
-                <p class="promo-text"></p>
-                <div class="promo-discount">
-                    <p class="promo-discount-title">VER</p>
-                </div>
-            </div>
+            
         </section>
-
         <!-- Items Section -->
         <div class="items-section">
-
-            <div class="categories-filter">
-                <div class="filter">
-                    <p>Remeras</p>
+            <div class="filters">
+                <label class="filter-title" for="select-sort">Ordenar por:</label>
+                <div class="filter-container">
+                    <select name="" id="select-sort" class="filter-selector">
+                        <option value="-1" disabled>Destacado</option>
+                        <option value="0" >Precio: Menor a mayor</option>
+                        <option value="1" >Precio: Mayor a menor</option>
+                        <option value="2" >A - Z</option>
+                        <option value="3" >Z - A</option>
+                        <option value="4" >Mas vendidos</option>
+                        <option value="5" >Mas nuevos</option>
+                        <option value="6">Mas viejos</option>
+                    </select>
+                    <div class="filter-button">
+                        <h4 class="filter-button title">FILTRAR</h4>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
                 </div>
-                <div class="filter">
-                    <p>Buzos</p>
+            <div class="filter-desplegable ">
+                <div class="filter-desplegable-top">
+                    <i class="fa-chevron-left fa-solid filter-back-button"></i>
+                    <h4 class="filter-desplegable-top-title">Filtrar por:</h4>
                 </div>
-                <div class="filter">
-                    <p>Boxers</p>
+                <div class="filter-desplegable-categories">
+                    <h4>Categorias</h4>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>REMERAS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>PANTALONES</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>ZAPAS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>GORRAS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>BOXERS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>MEDIAS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>COMBOS</h4>
+                        </a>
+                    </div>
+                    <div class="filter-desplegable-categorie">
+                        <a href="">
+                            <h4>ACCESORIOS</h4>
+                        </a>
+                    </div>
                 </div>
-                <div class="filter">
-                    <p>Gorras</p>
+                <div class="filter-desplegable-color">
+                    <h4 class="filter-desplegable-color-title">Color</h4>
+                    <ul class="filter-desplegable-color-list">
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="azul" id="filter-color-blue"><label for="filter-color-blue">Azul</label>
+                        </li>
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="rojo " id="filter-color-red"><label for="filter-color-red">Rojo</label>
+                        </li>
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="beige " id="filter-color-beige"><label for="filter-color-beige">Beige</label>
+                        </li>
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="negro " id="filter-color-black"><label for="filter-color-black">Negro</label>
+                        </li>
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="gris " id="filter-color-gray"><label for="filter-color-gray">Gris</label>
+                        </li>
+                        <li class="filter-desplegable-color-item">
+                            <input type="checkbox" name="" value="blanco " id="filter-color-white"><label for="filter-color-white">Blanco</label>
+                        </li>
+                    </ul>
+                    <button class="filter-desplegable-button-apply">Aplicar</button>
                 </div>
-                <div class="filter">
-                    <p>Zapas</p>
+                <div class="filter-desplegable-talle">
+                    <h4 class="filter-desplegable-talle-title">Talle</h4>
+                    <ul class="filter-desplegable-talle-list">
+                        <li class="filter-desplegable-talle-item">
+                            <input type="checkbox" name="" value="xxl" id="filter-color-xxl"><label for="filter-color-xxl">XXL</label>
+                        </li>
+                        <li class="filter-desplegable-talle-item">
+                            <input type="checkbox" name="" value="xl " id="filter-color-xl"><label for="filter-color-xl">XL</label>
+                        </li>
+                        <li class="filter-desplegable-talle-item">    
+                            <input type="checkbox" name="" value="l " id="filter-color-l"><label for="filter-color-l">L</label>
+                        </li>
+                        <li class="filter-desplegable-talle-item">    
+                            <input type="checkbox" name="" value="m " id="filter-color-m"><label for="filter-color-m">M</label>
+                        </li>
+                        <li class="filter-desplegable-talle-item">     
+                            <input type="checkbox" name="" value="s " id="filter-color-s"><label for="filter-color-s">S</label>
+                        </li>
+                        <li class="filter-desplegable-talle-item">     
+                            <input type="checkbox" name="" value="xs " id="filter-color-xs"><label for="filter-color-xs">XS</label>
+                        </li>
+                    </ul>
+                    <button class="filter-desplegable-button-apply">Aplicar</button>
                 </div>
-                <div class="filter">
-                    <p>Jeans</p>
-                </div>
-                <div class="filter">
-                    <p>Shorts</p>
+                <div class="filter-desplegable-price">
+                    <h4 class="filter-desplegable-price-title">Precio</h4>
+                    <div class="filter-desplegable-price-cont">
+                        <div class="filter-desplegable-price-desde">
+                            <label for="filter-desplegable-price-desde">Desde</label>
+                            <input type="text" name="" id="filter-desplegable-price-desde">
+                        </div>
+                        <div class="filter-desplegable-price-hasta">
+                            <label for="filter-desplegable-price-hasta">Hasta</label>
+                            <input type="text" name="" id="filter-desplegable-price-hasta">
+                        </div>
+                        <button class="filter-desplegable-price-button">Aplicar</button>
+    
+                    </div>
                 </div>
             </div>
-            <div class="other-filters">
-                
             </div>
-
             <div class="items-container">
                 <div class="item">
                     <div class="item-top">
@@ -345,6 +408,88 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container siete"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">GORRA DE LOS LAKERS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container ocho"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">JHON FOOS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount disabled">15% OFF</div>
+                        <div class="item-top-img-container cuatro"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">GORRA LEBRON</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before disabled">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount disabled">15% OFF</div>
+                        <div class="item-top-img-container cinco"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">JEAN 100% CALIDAD</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before disabled">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-top">
+                        <div class="item-top-discount">15% OFF</div>
+                        <div class="item-top-img-container seis"></div>
+                    </div>
+                    <div class="item-bottom">
+                        <h3 class="item-bottom-title">REMERAS</h3>
+                        <div class="item-bottom-price">
+                            <p class="item-bottom-price__before">$1999</p>
+                            <p class="item-bottom-price__after">$1299</p>
+                        </div>
+                        <div class="item-bottom-cuotas">
+                            <p>3 Cuotas sin interés de <span>$429</span></p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="item">
                     <div class="item-top">
                         <div class="item-top-discount">15% OFF</div>
@@ -379,11 +524,12 @@
                 </div>
                 
             </div>
-            <div class="items-more-products">
+            
+        </div>
+        <div class="items-more-products">
                 <div class="more-container">
                     <p>Ver todos los productos</p>
                 </div>
-            </div>
         </div>
     </main>
 
@@ -394,16 +540,16 @@
             <div class="footer-nav">
                 <h4>NAVEGACIÓN</h4>
                 <ul>
-                    <li class="wrap1"><p>Inicio</p></li>
-                    <li class="wrap1"><p>Hombre</p></li>
-                    <li class="wrap1"><p>Quiénes Somos</p> </li>
-                    <li class="wrap1"><p>Mujer</p></li>
-                    <li class="wrap1"><p>Tabla de talles</p> </li>
-                    <li class="wrap1"><p>Quedate en casa</p> </li>
-                    <li class="wrap1"><p>Cómo comprar</p> </li>
-                    <li class="wrap1"><p>Dónde estamos</p> </li>
-                    <li class="wrap1"><p>Contacto</p></li>
-                    <li class="wrap1"><p>Ventas por mayor</p> </li>
+                    <li class="wrap1"><a href="#top"><p>Inicio</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Hombre</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Quiénes Somos</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Mujer</p></a></li>
+                    <li class="wrap1"><a href="./talles.html"><p>Tabla de talles</p></a></li>
+                    <li class="wrap1"><a href="./devolucion.html"><p>Quedate en casa</p></a></li>
+                    <li class="wrap1"><a href="./devolucion.html"><p>Cómo comprar</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Dónde estamos</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Contacto</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Ventas por mayor</p></a></li>
                 </ul>
             </div>
             <div class="payments">
@@ -454,12 +600,12 @@
         </div>
     </footer>
 
-    <!-- Footer End-->
 
     <script src="../assets/js/slider.js"></script>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/carrito.js"></script>
     <script src="../assets/js/buscador.js"></script>
+    <script src="../assets/js/filter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 </body>
 </html>

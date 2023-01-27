@@ -1,0 +1,106 @@
+:root {
+    --black-principal: rgb(15, 15, 15);
+    --white-principal: white;
+    --secondary--color: #3f2028;
+    --tercer--color: #e0907c;
+    --margin-section: 3em;
+    --padding-section: 2em;
+    --filter-color:#ECECEC;
+    --index-base: 1;
+    --index-2: 10;
+    --index-3: 100;
+    --index-4: 1000;
+}
+.contactos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--filter-color);
+    margin: 1.5rem;
+    border-radius: 12px;
+}
+.datos li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+.datos li p, .datos li i{
+    color: black;
+    font-size: 1.1rem;
+}
+.datos li i{
+    color: var(--tercer--color);
+    font-size: 1.8rem;
+}
+
+.contact-form{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.4rem;
+    margin-top: 4rem;
+}
+.section-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .3rem;
+}
+.section-form label{
+    color: var(--black-principal);
+    text-transform: uppercase;
+}
+
+.section-form input{
+    width: 100%;
+    padding: 1rem;
+}
+.section-form input:focus{
+    color: var(--secondary--color);
+}
+.contact-msg{
+    width: 100%;
+    padding: .5rem;
+}
+.contact-form button{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary--color);
+    color: var(--filter-color);
+    border-radius: 12px;
+}
+.contact-form button:hover{
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .datos{
+        width: 40%;
+        margin: 0;
+    }
+    .contact-form{
+        width: 40%; 
+    }
+}

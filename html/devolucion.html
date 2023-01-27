@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/componentes.css">
+    <link rel="stylesheet" href="../assets/css/devolucion.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">     <!-- PARA ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Alaluf Store - Cambio y Devolucion</title>
+</head>
+<body>
+
+      <!-- Background Animation -->
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title"></div>
+    </section>
+
+    <!-- Menu Desplegable -->
+    <div class="menu ">
+        <div class="menu-container-cruz">
+            <i class="uil uil-times"></i>
+        </div>
+        <div class="menu-lista">
+            <li class="menu-item">
+                <a href="index.html" class="menu-item-link">
+                    <p class="menu-item-text">Inicio</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./products.html" class="menu-item-link">
+                    <p class="menu-item-text">Productos</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./talles.html" class="menu-item-link">
+                    <p class="menu-item-text">Tabla de talles</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./devolucion.html" class="menu-item-link">
+                    <p class="menu-item-text">Cambio y Devolución</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="./contact.html" class="menu-item-link">
+                    <p class="menu-item-text">Ayuda y Contactos</p>
+                </a>
+            </li>
+        </div>
+        <div class="menu-container-login">
+            <div class="menu-photo">
+                <i class="uil uil-user-circle"></i>
+            </div>
+            <div class="menu-container-logintext">
+                <a href="./signup.html"><p class="menu-new-account">Crear nueva cuenta</p></a>
+                <i class="fa-solid fa-grip-lines-vertical"></i>
+                <a href="./login.html"><p class="menu-login">Iniciar Sesión</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito -->
+    <div class="carrito">
+        <div class="carrito-top">
+            <h2 class="carrito-top-title">Carrito de Compras</h2>
+            <i class="uil uil-times carrito-cruz"></i>
+        </div>
+        <div class="carrito-bottom">
+            <div class="carrito-bottom-title">Productos</div>
+            <div class="carrito-bottom-title">Subtotal</div>
+        </div>
+        <div class="carrito-products">
+            <p class="carrito-empty">EL CARRITO DE COMPRAS ESTÁ VACIO.</p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="bg-overlay"></div>
+        <div class="carrito-overlay"></div>
+        <div class="header-top">
+            <marquee behavior="scroll" direction="left" scrollamount="6" class="header-top-sign" >
+                <span>ENVÍOS INTERNACIONALES DISPONIBLES</span>
+                <span>[ENVÍO GRATIS] PARA TODA LA ARGENTINA PARA COMPRAS SUPERIORES A $21K</span>
+                <span>6 CUOTAS SIN INTERÉS CON VISA, MASTERCARD Y AMEX</span>
+            </marquee>
+        </div>
+        <div class="header-mid">
+            <div class="header-mid-menu">
+                <div class="header-mid-menu-cont">
+                </div>
+                <span>MENÚ</span>
+            </div>
+            <div class="header-mid-logo">
+                <a href="./index.html"><div class="logo"></div></a>
+            </div>
+            <div class="header-mid-container">
+                    <div class="header-mid-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                <div class="header-mid-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="buscador">
+        <label for="buscador-input"></label>
+        <input type="text" name="" id="buscador-input"   class="buscador-input">
+        <input type="button" value=">" class="buscador-button">
+    </div>
+
+    <!-- URL -->
+     <div class="url-container">
+        <a href="./index.html"><p>Inicio</a> / <span class="url-change">Cambio y Devolucion</span></p>
+    </div>
+
+    <!-- Cambio y Devolucion -->
+    <div class="cambio-container">
+        <div class="cambio">
+            <h3 class="cambio-title">Politica de Envios: </h3>
+            <p class="cambio-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quibusdam doloremque, asperiores cum voluptas, voluptate iusto quae optio autem
+                 deserunt modi illum dolorum? Quasi, facilis temporibus quas eos veniam in obcaecati.</p>
+        </div>
+        <div class="cambio">
+            <h3 class="cambio-title">Politica de Devolucion: </h3>
+            <p class="cambio-text">Nuestro objetivo principal es que estés satisfecho con tu compra. Por eso te ofrecemos 10 días para realizar el cambio o devolución de tus productos ante las siguientes situaciones:</p>
+            <ul>
+				<li>
+					<p> A - No me gustó: 
+					Si el producto no cubre tus expectativas, podés cambiarlo por un cupón de compra por el mismo valor
+					 o bien solicitar la devolución de tu dinero. En este caso, deduciremos el gasto de envío.</p>
+				</li>
+				<li>
+					<p>B - Producto defectuoso:
+						Si recibís un producto con alguna falla o defecto podés optar por el reemplazo o bien la devolución, ya sea por cupón de compra o la devolución del dinero.</p>
+				</li>
+				<li>
+					<p>C- Me queda chico/grande: 
+						Deberás enviar el producto a nuestras oficinas y recibirás el cambio por el mismo producto en el talle que solicites. Consultar costo de logística según localidad.</p>
+				</li>
+			</ul>
+        </div>
+        <div class="cambio">
+            <h3 class="cambio-title">Politica de Cambio de producto: </h3>
+            <p class="cambio-text">El cambio está sujeto a disponibilidad de stock a partir del reingreso de la mercadería y luego de superado el control de calidad.
+				En caso de cambio por cupón o reintegro, se reconocerán los costos de los artículos abonados al momento de la compra.
+				</p>
+				<ul>
+					<li>
+						<p>1- Enviá un mail a hola@quierocalma.com.ar informando número de orden, motivo del cambio, talle y color del producto pretendido.
+ 						</p>
+					</li>
+					<li>
+						<p>
+							2- Recibirás una respuesta confirmando si está permitido el cambio con las indicaciones para el mismo.</p>
+					</li>
+				</ul>
+        </div>
+        
+    </div>
+    <div class="envios-container">
+        <div class="envio">
+            <i class="fa-truck fa-solid envio-icon"></i>
+            <h4 class="envio-title">Envios gratis en CBA</h4>
+            <p class="envio-text">Y gratis a todo el pais a partir de $15000</p>
+        </div>
+        <div class="envio">
+            <i class="fa-credit-card fa-solid envio-icon"></i>
+            <h4 class="envio-title">Todos los medios de pago</h4>
+            <p class="envio-text">Tarjetas de credito, debito, Mercado Pago y transferencias.</p>
+        </div>
+        <div class="envio">
+            <i class="fa-arrows-rotate fa-solid envio-icon"></i>
+            <h4 class="envio-title">Cambio y Devolución</h4>
+            <p class="envio-text">En todo el pais.</p>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li class="wrap1"><a href="#top"><p>Inicio</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Hombre</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Quiénes Somos</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Mujer</p></a></li>
+                    <li class="wrap1"><a href="./talles.html"><p>Tabla de talles</p></a></li>
+                    <li class="wrap1"><a href="./devolucion.html"><p>Quedate en casa</p></a></li>
+                    <li class="wrap1"><a href="./devolucion.html"><p>Cómo comprar</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Dónde estamos</p></a></li>
+                    <li class="wrap1"><a href="./contact.html"><p>Contacto</p></a></li>
+                    <li class="wrap1"><a href="./products.html"><p>Ventas por mayor</p></a></li>
+                </ul>
+            </div>
+            <div class="payments">
+                <h4>MEDIOS DE PAGO</h4>
+                <ul>
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png" alt="">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png" alt="">
+                </ul>
+            </div>
+            <div class="shipping">
+                <h4>FORMAS DE ENVÍO</h4>
+                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png" alt="">
+            </div>
+            <div class="contact">
+                <h4>CONTACTANOS</h4>
+                <ul>
+                    <li>
+                        <div class="phone-icon"></div>
+                        <span>3524 777-7777</span>
+                    </li>
+                    <li>
+                        <div class="arroba-icon"></div>
+                        <span>example@email.com</span>
+                    </li>
+                    <li>
+                        <div class="place-icon"></div>
+                        <span>Route 69</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4>REDES SOCIALES</h4>
+                <a href="instagram.com" class="ig-logo">
+                </a>
+                <a href="facebook.com" class="fb-logo"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/carrito.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/buscador.js"></script>
+
+</body>
+</html>
